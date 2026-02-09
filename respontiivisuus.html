@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Responsiivinen suunnittelu</title>
+
+    <style>
+        /* media säännöt aina vasta muiden sääntöjen jälkeen*/
+      /*sääntö aktivoituu myöhemmin. eka desktop niin max (Desktop ajattelu)*/
+      body { background-color: rgb(166, 61, 117);}
+
+                #kurkku3 {
+            width: 700px;
+            height: 700px;
+           background-color: rgb(6, 6, 6);
+           background-image: url(/public/img/morty.png);
+           background-repeat: no-repeat;
+           background-position: center bottom;/*esim keskellä alhaalla.
+            Voi myös antaa 50% 50% esim. tai pelkkä center*/
+            background-size: cover;/*täyttää aina tyhjän tilan!!!! :)*/
+
+            /*Parallax rolling. Pysyy taustalla scrollatessa. Tulee esiin / piiloon*/
+            /*background-attachment:fixed;*/
+
+
+
+            /*Kotitehtävässä float none esim banneri ja keski blockkiin*/
+            
+        }
+
+
+
+
+
+
+
+      @media screen and (min-width: 600px) {
+          body { background-color: gold;}
+
+          p {
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              font-size: 10px;
+          }
+
+      }
+
+      @media screen and (min-width: 800px) {
+          body { background-color: rgb(0, 255, 183);}
+          p {
+              font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            
+            }
+            #kurkku3 {
+                background-image: url(/public/img/logo.svg);
+                background-attachment: fixed;
+            }
+        }
+
+            @media screen and (min-width: 700px) and (max-width: 800px) {
+          body { background-color: rgb(0, 255, 183);}
+          p {
+              font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            
+            }
+        }
+         /* kuvien säätämistä.*/
+        #kurkku {
+            width: 100%;
+            max-width: 500px;
+
+            
+        }
+
+        @media screen and (min-width: 720px) {
+            #kurkku {
+                display: block;
+                margin: auto;
+            }
+        }
+        /*object-fit leikkaa kuvaa oikealta selaimen kokoa muuttaessa*/
+        #kurkku2 {
+            width: 700px;
+            height: 50%;
+            object-fit: cover;
+        }
+
+
+          
+
+          
+    </style>
+  </head>
+  <body>
+    <h3>Otsikko</h3>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum a voluptas
+      nemo ratione temporibus perspiciatis atque, vel animi accusantium quidem
+      maiores eos harum inventore fugiat aperiam molestiae officiis! Voluptatem,
+      labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+      deleniti? Ut, sunt corporis? Eum, animi magnam? Quod illo aspernatur,
+      veritatis eaque laudantium nihil aliquid assumenda minima temporibus
+      exercitationem. Commodi, animi! Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Esse amet consectetur fugit eos sit saepe eum
+      praesentium commodi, minus pariatur dignissimos dolorem magni. Numquam at
+      perspiciatis aspernatur quos libero odit?
+      <h3>Normaali img kuva ja mediasäännöt</h3>
+      <img src="/public/img/OIP.webp" id="kurkku" />
+
+            <h3>Object fit</h3>
+      <img src="/public/img/OIP.webp" id="kurkku2" />
+
+
+               <h3>Taustakuva</h3>
+      <div id="kurkku3">    </div>
+        
+
+
+    </p>
+  </body>
+</html>
+
+

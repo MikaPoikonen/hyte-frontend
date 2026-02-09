@@ -1,0 +1,199 @@
+
+body {
+  margin: 0;
+}
+
+
+ul a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+main {
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 0px;
+  border-radius: 20px;
+  box-shadow: 3px 5px gray;
+}
+
+#laatikko1 {
+  width: 75px;
+  height: 75px;
+  margin: 0px;
+  /*filter: invert();*/
+  background-color: hsla(0, 0%, 0%, 0.852);
+
+  position: absolute; /* tarv  esim. main suhteen lisätä mainiin position: prent*/
+  top: -30px;
+  right: 0px;
+  border-radius: 100%;
+}
+
+li {
+  display: inline-block;
+  padding: 5px;
+  font-size: 30px;
+
+  border-style: double;
+  margin: 15px;
+  text-align: center;
+  border-radius: 20px;
+  border-color: rgb(119, 136, 153);
+  box-shadow: 3px 5px gray;
+}
+
+#image {
+  display: block;
+  width: 250px;
+  margin-right: 20px;
+  margin-top: 10px;
+  float: left;
+}
+
+div {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#red {
+  background-color: red;
+  /* tällä voi piilottaa visibility: hidden; */
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+  background-color: rgba(224, 230, 236, 0.527);
+  color: white;
+  text-align: center;
+  padding-top: 0px;
+  width: 100%;
+  height: 50px;
+
+}
+
+nav::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+main {
+  background-color: rgba(224, 230, 236, 0.527);
+  padding: 30px;
+  width: 60%;
+  margin-top: 40px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 5%;
+  border: 3px;
+}
+
+#lightgreen {
+  color: rgb(158, 9, 131);
+  font-weight: bold;
+}
+
+nav {
+  width: 100%;
+}
+
+#ylakuva {
+  max-width: 94%;
+  height: 500px;
+  margin: auto;;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+
+  
+  background-color: rgb(6, 6, 6);
+  background-image: url(/public/img/morty.png);
+  background-repeat: no-repeat;
+  background-position: center;/*esim keskellä alhaalla.
+            Voi myös antaa 50% 50% esim. tai pelkkä center*/
+  background-size: cover;
+  }
+
+
+
+/*Brakepointit*/
+@media screen and (max-width: 900px){
+  #image {
+    float: none;
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  main {
+    width: 80%;
+  }
+
+  p {
+    font-size: 30px;
+    text-align: center;
+    image-rendering: auto;
+  }
+
+  ul {
+    width: 100%;
+    margin:auto;
+  }
+
+  h3{ font-size: 50px;
+    text-align: center;
+
+  }
+  footer {
+    width: 85%;
+    margin: auto;
+  }
+
+  nav {
+    
+    width: 100%;
+    padding-top: 0px;
+    
+  }
+  body {
+    background-color: rgb(180, 201, 173);
+  }
+  
+}
+@media  screen and (min-width: 900px) {
+  #ylakuva {
+  max-width: 60%;
+  height: 500px;
+  margin: auto;;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+
+  
+  background-color: rgb(6, 6, 6);
+  background-image: url(/public/img/morty.png);
+  background-repeat: no-repeat;
+  background-position: center;/*esim keskellä alhaalla.
+            Voi myös antaa 50% 50% esim. tai pelkkä center*/
+  background-size: cover;
+  }
+  
+}

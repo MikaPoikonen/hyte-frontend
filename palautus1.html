@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Positioning Items</title>
+    <meta charset="UTF-8">
+    <style>
+      /*////////////////////
+        // Positioning items    
+        //////////////////////
+        
+        Reset *
+        Display: inline vs block
+        https://www.w3schools.com/cssref/pr_class_display.asp
+    
+        Box-sizing
+        https://www.w3schools.com/css/css3_box-sizing.asp
+        
+        Using percentages and max-width
+        https://www.w3schools.com/cssref/css_units.asp
+        Centering
+        https://www.w3schools.com/css/css_align.asp
+    
+        Float and clear
+        https://www.w3schools.com/cssref/pr_class_float.asp
+                
+        Absolute/Relative positioning
+        https://www.w3schools.com/cssref/pr_class_position.asp
+        
+        
+        Flexbox - https://www.w3schools.com/css/css3_flexbox.asp
+        */
+
+      * { 
+      }
+
+      body { margin: 0;
+      }
+
+      ul a {
+        
+        color: white;
+        text-decoration: none;
+      }
+      main {
+        position: relative;
+      }
+
+      ul {
+        list-style-type: none;
+        background-color: black;
+        height: 80px;
+        width: 560px;
+        text-align: center;
+        margin: auto;
+        padding: 0px;
+        border-radius: 20px;
+        box-shadow: 3px 5px gray;
+        
+        
+
+    
+      }
+
+              #laatikko1 {
+        width: 75px;
+        height: 75px;
+        margin: 0px;
+        /*filter: invert();*/
+        background-color: hsla(0, 0%, 0%, 0.852);
+        
+        position: absolute; /* tarv  esim. main suhteen lisätä mainiin position: prent*/
+        top: -30px;
+        right: 0px;
+        }
+
+      li {
+        display: inline-block;
+        padding: 5px;
+        font-size: 30px;
+        
+        border-style: double;
+        margin: 15px;
+        text-align: center;
+        border-radius: 20px;
+        border-color: rgb(119, 136, 153);
+        box-shadow: 3px 5px gray;
+        
+
+      }
+              #image{
+            display: block;
+            float: left;
+            width: 250px;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+        div {
+          margin-top: 50px;
+          text-align: center;
+        }
+
+
+      #red {
+        background-color: red;
+        /* tällä voi piilottaa visibility: hidden; */
+      }
+
+
+      .clear {
+        clear: both;
+      }
+
+             footer {
+            background-color: midnightblue;
+            color: white;
+            text-align: center;
+            padding-top: 0px;
+            width: 100%;
+            height: 50px;
+            
+        }
+
+
+        nav::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+            section{
+                margin-top: 50px;
+                text-align: center;;
+            }       main{
+            background-color: rgb(119, 136, 153);
+            padding: 30px;
+            width: 500px;
+            margin-top: 40px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+        }
+        #lightgreen{
+            color: rgb(158, 9, 131);
+            font-weight: bold;
+        }
+
+        #image{
+            display: block;
+            float: left;
+            width: 250px;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+
+      /* img */
+      img {
+      }
+
+      /* container */
+      .container {
+      }
+
+      /* relative and absolute positioning with blue */
+      #blue {
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+    
+<ul>    
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
+    </nav>
+
+
+
+        <div>
+        Miten <span id="lightgreen">Hytegym</span> tekee jotakin millon mitäkin
+
+    </div>
+    <main>
+        <h3>Pähkäilyä</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ipsa cupiditate non ducimus <img id="image" src="/public/img/mies.webp" alt="Mies ja aurinkolaskit">quibusdam repudiandae qui laboriosam
+         veritatis quis saepe, nostrum expedita error eum tempora fugiat 
+         veniam, culpa aliquam. Exercitationem, repudiandae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quod quos necessitatibus nisi laboriosam maiores velit vitae, 
+         praesentium iste, <img id="laatikko1" src="/public/img/logo.svg" alt="Mies ja aurinkolaskit"> repellendus explicabo illum sunt voluptate ducimus suscipit at? Sapiente, aspernatur?</p>
+    </main>
+    
+
+    <!-- Responsive images and centering -->
+     <footer>Copyright: Mika Poikonen</footer>
+  </body>
+</html>
