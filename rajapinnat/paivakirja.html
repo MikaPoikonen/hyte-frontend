@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <title>Positioning Items</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="/BMI/bmi.html">BMI Laskuri</a></li>
+        <li><a href="/rajapinnat/rajapinnat-v2.html">Hedelmiä</a></li>
+        <li><form class="logIn">
+          <input type="text" id="logInName" placeholder="Käyttäjätunnus" required>
+          
+          <input type="password" id="logInPassword" placeholder="Salasana" required>
+          <button type="submit" id="LogInButton">Login</button> </form> </li>
+
+
+       
+      </ul>
+    </nav>
+    <div id="ylakuva"></div>
+
+    <div>
+      Tästä <span id="lightgreen">Projekti Terveyden Puolesta</span> askel kerralla kohti parempaa hyvinvointia! 
+    </div>
+
+    <main>
+      <h2>Päiväkirjamerkinnät</h2>
+
+      <form id="add-text-site">
+        <label for ="addNewText">Lisää tekstiä</label>
+        <input type ="text"
+        id ="textfield"
+        name = "Syötä päiväkirjamerkinnät"
+        placeholder="Tekti tähän"
+        required
+        />
+        <button type ="submit" style="margin-top:10px ;">Lisää merkintä</button>
+      </form> 
+      
+      <ul id="text-ul">
+
+
+      </ul>
+    
+
+        <img id="laatikko1" src="/public/img/sydän.png" alt="Logo" />
+        asdadasd
+      
+    </main>
+
+    <footer>Copyright: Mika Poikonen</footer>
+  </body>
+  <script type="module" src="/src/js/login.js"></script>
+  <script type="module" src="/src/js/paivakirja.js"></script>
+</html>

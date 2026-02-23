@@ -1,0 +1,244 @@
+
+body {
+  margin: 0;
+  background-color:  rgb(180, 201, 173);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+
+ul a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+
+
+
+main {
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  background-color:   rgb(180, 201, 173);
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 0px;
+  /*box-shadow: 3px 5px gray;*/
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
+   0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+#laatikko1 {
+  width: 240px;
+  height: 220px;
+  margin: 0px;
+
+  position: absolute; /* tarv  esim. main suhteen lisätä mainiin position: prent*/
+  top: -90px;
+  right: -54px;
+  border-radius: 100%;
+  
+}
+
+li {
+  display: inline-block;
+  padding: 5px;
+  font-size: 30px;
+
+  border-style: double;
+  margin: 15px;
+  text-align: center;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-color: rgb(119, 136, 153);
+  box-shadow: 3px 5px gray;
+}
+
+#image {
+  display: block;
+  width: 250px;
+  margin-right: 20px;
+  margin-top: 10px;
+  float: left;
+}
+
+div {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#red {
+  background-color: red;
+  /* tällä voi piilottaa visibility: hidden; */
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+  background-color:   rgb(180, 201, 173);
+  color: rgb(213, 235, 114);
+  text-align: center;
+  padding-top: 0px;
+  width: 100%;
+  height: 50px;
+    box-shadow: 0 -2px 10px rgba(0, 30, 0, 0.25)
+
+}
+
+nav::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+main {
+  background-color: rgba(224, 230, 236, 0.527);
+  padding: 30px;
+  width: 60%;
+  margin-top: 40px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  border: 3px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
+   0 2px 6px rgba(0, 0, 0, 0.08); /*varjostus x-offset,y-offset,blur,spread,color*/
+}
+
+#lightgreen {
+  color: rgb(223, 250, 102);
+  font-weight: bold;
+}
+
+nav {
+  width: 100%;
+}
+
+#ylakuva {
+  max-width: 90%;
+  height: 500px;
+  margin: auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+ 
+
+  
+  
+  background-image: url(public/img/running.png);
+  background-repeat: no-repeat;
+  background-position: center;/*esim keskellä alhaalla.
+            Voi myös antaa 50% 50% esim. tai pelkkä center*/
+  background-size: cover;
+  }
+
+  h1,h2,h3,h4,h5 {
+    color:  rgb(223, 250, 102);
+  }
+
+
+/*Brakepointit*/
+@media screen and (max-width: 900px){
+
+    #ylakuva {
+    max-width: 100%;
+    height: 300px;
+    margin: auto;
+    background-image: url("/public/img/running.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+
+
+  #image {
+    float: none;
+    width: 70%;
+
+  }
+  main {
+    width: 80%;
+    font-size: 23px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 23px;
+    text-align: center;
+    image-rendering: auto;
+  }
+
+  ul {
+    width: 100%;
+    margin:auto;
+    height: 300x;
+    box-shadow: none;
+  }
+
+  h3{ font-size: 50px;
+    text-align: center;
+
+  }
+  footer {
+    width: 85%;
+    margin: auto;
+  }
+
+  nav {
+    
+    width: 100%;
+    padding-top: 0px;
+    height: 100px;
+    
+  }
+  li {
+    font-size: 18px;
+    padding: 0px;
+    margin: 5px;
+  }
+  
+  
+  
+}
+@media screen and (min-width: 900px) {
+  #ylakuva {
+    max-width: 100%;
+    height: 600px;
+    margin: auto;
+    background-image: url("/public/img/running.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+}
+
+ /*Päiväkirja merkintöjen muotoilut*/
+
+  #text-ul {
+    width: 100%;
+    margin: auto;
+    height: 60%;
+    box-shadow: none;
+  }
+  
+  #text-ul li {
+  list-style-type: none;
+  text-align: left;
+  padding: 5px;
+  font-size: 12px;
+  height: auto;
+}
