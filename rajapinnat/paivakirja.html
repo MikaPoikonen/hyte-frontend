@@ -31,6 +31,16 @@
     <main>
       <h2>Päiväkirjamerkinnät</h2>
 
+      <button class="get_entries">Hae merkinnät</button>
+      <!--<Haetaa merkinnät nappulalla</button>-->
+        <section id="card-area">
+          <div class = "card"><h3>Otsikko</h3>
+          <p>teksti</p></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+        </section>
+
       <form id="add-text-site">
         <label for ="addNewText">Lisää tekstiä</label>
         <input type ="text"
@@ -46,12 +56,38 @@
 
 
       </ul>
+
+      <div class ="stats">
+        <ul id="stats-ul">
+        Keskiarvot:
+        
+        </ul>
+      </div>
     
 
         <img id="laatikko1" src="/public/img/sydän.png" alt="Logo" />
         asdadasd
       
     </main>
+
+  </form>
+
+
+    <body>
+  <!-- kortit tässä -->
+<dialog id="myDialog">
+  <h2>Otsikko</h2>
+  <p id="dialogId">Tässä on dialogin sisältöä.</p>
+
+  <form method="dialog">
+    <button value="cancel">Peruuta</button>
+    <button value="ok">OK</button>
+  </form>
+</dialog>
+
+  <script type="module" src="/src/js/paivakirja.js"></script>
+</body>
+
 
     <footer>Copyright: Mika Poikonen</footer>
   </body>

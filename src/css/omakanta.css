@@ -228,6 +228,29 @@ nav {
 
  /*Päiväkirja merkintöjen muotoilut*/
 
+
+  /*flexillä uusi tietokantahaku*/ 
+  #card-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: salmon;
+  }
+  /*flexillä uusi tietokantahaku*/ 
+  #card-area .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   #text-ul {
     width: 100%;
     margin: auto;

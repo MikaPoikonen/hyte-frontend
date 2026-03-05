@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Positioning Items</title>
+    <meta charset="UTF-8" />
+    <style>
+      /*////////////////////
+        // Positioning items    
+        //////////////////////
+        
+        Reset *
+        Display: inline vs block
+        https://www.w3schools.com/cssref/pr_class_display.asp
+    
+        Box-sizing
+        https://www.w3schools.com/css/css3_box-sizing.asp
+        
+        Using percentages and max-width
+        https://www.w3schools.com/cssref/css_units.asp
+        Centering
+        https://www.w3schools.com/css/css_align.asp
+    
+        Float and clear
+        https://www.w3schools.com/cssref/pr_class_float.asp
+                
+        Absolute/Relative positioning
+        https://www.w3schools.com/cssref/pr_class_position.asp
+        
+        
+        Flexbox - https://www.w3schools.com/css/css3_flexbox.asp
+        */
+
+      * {
+      }
+
+      body {
+        margin: 0%;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      /* img */
+      img {
+      }
+
+      /* container */
+      .container {
+      }
+
+      /* relative and absolute positioning with blue */
+      #blue {
+      }
+
+      /*Järjestää riviin divit ja oikeessa järjestyksessä*/
+      /*containerilla eli laatikoiden pohjalla"laatikolla"*/
+      /*flex-directionilla valitaan siinta. pysty tai vaaka ja järjestys*/
+
+      .box {
+        /*height: 100px;*/
+        /*width: 100px;*/
+        border: 1px solid black;
+        color: aliceblue;
+      }
+
+      #red {
+        background-color: red;
+        /*FLEX_BASIS oli sitten row vaaka tai column allekkain. Hakee 300px leveyden oikeaan suuntaan*/
+        flex-basis: 300px;
+      }
+      #green {
+        background-color: green;
+        flex: 1;
+      }
+      #blue {
+        background-color: blue;
+        /*align-self: flex-start;*/
+        /*order:2;*/
+        flex: 1;
+      }
+      #yellow {
+        background-color: yellow;
+        color: black;
+        flex: 1;
+      }
+      #orange {
+        background-color: orange;
+        order: 3;
+        flex: 1;
+      }
+
+      .container {
+        display: flex;
+        /*Main axis VAAKASUUNTAINEN SÄÄNTÖ*/
+        flex-direction: column;
+        justify-content: center;
+        /*cross axis eli PYSTYSUUNTAINEN SÄÄNTÖ*/
+        /*Baseline tasoittaa teksin kohdat vaikka laatikot olisivat erikokoiset*/
+        /*align-items:center;*/
+        height: 100vh;
+        background-color: lightblue;
+        /* capt antaa tilaa  väliin*/
+        /*gap: 30px;*/
+        /* wrappi tekee useammalle riville ja sen alle aling content poistaaa tyhjät tilat ja laittaa rivit allekkain nätisti*/
+        /*flex-wrap: wrap;*/
+        /*align-content: center;*/
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box" id="red">Box 1</div>
+      <div class="box" id="green">Box 2</div>
+      <div class="box" id="blue">Box 3</div>
+      <div class="box" id="yellow">Box 4</div>
+      <div class="box" id="orange">Box 5</div>
+
+    </div>
+    <!-- Float continues, clearing -->
+
+    <h1>Heading 1</h1>
+    <h1>Heading 2</h1>
+
+    <!-- Responsive images and centering -->
+  </body>
+</html>
