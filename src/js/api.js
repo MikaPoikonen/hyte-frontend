@@ -1,5 +1,5 @@
 import "../css/api.css";
-import { getItems, getItemById,deleteItemById,addItem } from "./items.js";
+import { getItems, getItemById,deleteItemById,addItem,loadItemToPutForm } from "./items.js";
 
 console.log("Toimiiko");
 
@@ -86,3 +86,10 @@ deleteButton.addEventListener('click',deleteItemById);
 //ADD button hakeminen
 const AddItemForm = document.querySelector(".add-item-form");
 AddItemForm.addEventListener('submit',addItem);
+
+// PUT lisäykset KOTITEHTÄVÄKSI ne on tässä
+const loadItemBtn = document.querySelector('.load-item');
+loadItemBtn.addEventListener('click', loadItemToPutForm);
+
+const putForm = document.querySelector('.put-item-form');
+putForm.addEventListener('submit', updateItemById);
