@@ -1,5 +1,6 @@
 import '../css/api.css';
 import '../css/snackbar.css';
+import '../css/forms.css';
 import { fetchData } from './fetch.js';
 
 console.log('Moi luodaan nyt tokeneita ja kirjaudutaan sisään');
@@ -97,7 +98,7 @@ const loginUser = async (event) => {
 		localStorage.setItem('name', response.user.username);
 		logResponse('loginResponse', `localStorage set with token value: ${response.token}`);
 setTimeout(function () {
-			window.location.href = 'index.html';
+			window.location.href = '/rajapinnat/paivakirja.html';
 		}, 3000);
 	}
 

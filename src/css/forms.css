@@ -1,0 +1,24 @@
+*:focus{
+    outline: 20px dotted red;
+}
+.registerForm input {
+    padding: 40px;
+}
+
+p::first-letter{
+    font-size: 50px;
+}
+
+::placeholder {
+    color: blue;
+}
+
+input:focus, textarea:focus {
+    background-color: aquamarine;
+}
+
+.registerForm input:user-valid {
+    background-color: chartreuse;
+    
+}
+

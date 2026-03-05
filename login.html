@@ -11,15 +11,11 @@
 
     <h3>REGISTER</h3>
 
-    <p>
-      Lisää käyttäjiä formin avulla. Formi lisää uuden käyttäjän
-      nappulasta 'Add User'.
-    </p>
 
     <!-- https://www.w3schools.com/css/css_form.asp -->
-    <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_form_padding -->
+   <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_form_padding -->
 
-    <pre style="overflow: auto">
+   <!-- <pre style="overflow: auto">
     POST http://localhost:3000/api/users
     content-type: application/json
 
@@ -28,29 +24,42 @@
       "password": "duck",
       "email": "daisy@example.com"
     }
-    </pre>
+    </pre>*/-->
+
+
+
+
 
     <form class="registerForm">
-      <label for="username">Username</label>
+      <label for="username">Username</label><!-- Label help to read laber Heads and fields. Also if click header activates form fields -->
       <input
         id="username"
         type="text"
         name="username"
+        required
+        minlength="3" 
+        maxlength="20"
         placeholder="daisy"
       />
-      <label for="password">Password</label>
+      <label for="password">Password</label> 
       <input
         id="password"
         type="password"
         name="password"
-        placeholder="duck"
+        required
+        pattern="^(?=.*[A-Z])(?=.*[0-9]).{8,}$"
+        placeholder="eXample1"
+        title="Isoja ja pieniä kirjaimia ja numeroita. Min 8 merkkiä"
       />
-      <label for="password">Email</label>
+      <label for="password">Email metropolia.fi päätteinen</label>
       <input
         id="email"
         type="email"
         name="email"
-        placeholder="daisy@example.com"
+        pattern="^[^\s@]+@metropolia\.fi$"
+        required
+        title="Syötä metropolia.fi-sähköpostiosoite"
+        placeholder="example@metropolia.fi"
       />
       <input
         name="submit"
@@ -58,11 +67,13 @@
         value="Add User"
         class="postuser"
       />
+      <textarea name="" id="">awdadasdasd</textarea>
     </form>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis at quos voluptatem natus est corporis sapiente dolorem qui, voluptatibus, aperiam totam ratione accusamus expedita consequuntur! Doloremque laudantium qui ipsa id!</p>
   </div>
 
     <h3>LOGIN</h3>
-    <pre><code>
+    <!-- <pre><code>
       # Login
       POST http://localhost:3000/api/users/login
       content-type: application/json
@@ -71,17 +82,17 @@
         "username": "daisy",
         "password": "duck"
       }
-      </code></pre>
+      </code></pre>-->
     <div>
       <form class="loginForm">
         <label for="username">Username</label>
-        <input type="text" name="username" placeholder="name" value="mika123" />
+        <input type="text" name="username" placeholder="name" value="mikafinal" />
         <label for="password">Password</label>
         <input
           type="password"
           name="password"
-          placeholder="name123"
-          value="kissa"
+          placeholder="salasana tähän"
+          value="testi123"
         />
         <input
           name="submit"
@@ -95,10 +106,10 @@
     </div>
     <hr />
     <div>
-      <pre><code>
+    <!--  <pre><code>
         # Get user info by token (requires token)
         GET http://localhost:3000/api/users/me
-        Authorization: Bearer (put-user-token-here)</code></pre>
+        Authorization: Bearer (put-user-token-here)</code></pre>-->
       <button id="meRequest">Make an "authenticated" request</button>
       <br />
       <div id="meResponse"></div>

@@ -9,15 +9,10 @@
   <body>
     <nav>
       <ul>
-        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="../index.html">Etusivu</a></li>
         <li><a href="/BMI/bmi.html">BMI Laskuri</a></li>
-        <li><a href="/rajapinnat/rajapinnat-v2.html">Hedelmiä</a></li>
-        <li><form class="logIn">
-          <input type="text" id="logInName" placeholder="Käyttäjätunnus" required>
-          
-          <input type="password" id="logInPassword" placeholder="Salasana" required>
-          <button type="submit" id="LogInButton">Login</button> </form> </li>
-
+        <li><a href="/rajapinnat/rajapinnat-v2.html">Hedelmä esimerkit</a></li>
+        <li> Hei käyttäjä <span class="username"> Nimi tähän</span></li>
 
        
       </ul>
@@ -31,49 +26,115 @@
     <main>
       <h2>Päiväkirjamerkinnät</h2>
 
-      <button class="get_entries">Hae merkinnät</button>
-      <!--<Haetaa merkinnät nappulalla</button>-->
-        <section id="card-area">
-          <div class = "card"><h3>Otsikko</h3>
-          <p>teksti</p></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-        </section>
 
+      <!-- Tutki formdata javascriptiin-->
+
+        
+        <!-- Disablet formiin ei anna muokata kenttää.
+         Type: Hidden piilottaa kentän mutta se kulkee mukana esim id:-->
       <form id="add-text-site">
-        <label for ="addNewText">Lisää tekstiä</label>
+
+
+        <label for ="addNewText">Syödyt kalorit</label>
+        <input type ="number"
+        id ="caloriesEatenInput"
+        name ="calories_eaten"
+        placeholder="Syödyt kalorit"
+        />
+         <label for ="addNewText">Kulutetut kalorit</label>
+        <input type ="number"
+        id ="caloriesUsedInput"
+        name = "calories_used"
+        placeholder="Kulutetut kalorit"
+        />
+        <label for ="addNewText">Askeleet</label>
+        <input type ="number"
+        id ="stepsInput"
+        name = "steps"
+        placeholder="Askeleet"
+        />
+
+        
+        <label for ="addNewText">Paino tänään</label>
+        <input type ="number"
+        id ="weightTodayInput"
+        name = "weight_today"
+        placeholder="Paino tänään"
+        />
+        
+
+        <label for ="addNewText">Mikä fiilis ?</label>
         <input type ="text"
-        id ="textfield"
-        name = "Syötä päiväkirjamerkinnät"
-        placeholder="Tekti tähän"
-        required
+        id ="moodInput"
+        name = "mood"
+        placeholder="Mikä Fiilis?"
+        />
+
+
+        <label for ="addNewText">Alkupaino</label>
+        <input type ="number"
+        id ="weightInput"
+        name = "weight"
+        placeholder="Lähtöpaino"
+        />
+
+        <label for ="addNewText">Nukutut tunnit</label>
+        <input type ="number"
+        id ="sleepHoursInput"
+        name = "sleep_hours"
+        placeholder="Nukutut tunnit"
+        />
+                
+        <label for ="addNewText">Muistiinpanot</label>
+        <textarea name="notes" 
+        id="notesInput" 
+        placeholder="Mitä haluat kirjoittaa ylös ?">awdadasdasd
+      </textarea>
+
+
+
+        <label for ="addNewText">Merkinnän id</label>
+        <input type ="number"
+        id ="statIdInput"
+        name = "stat_id"
+        placeholder="Merkinnän ID?"
+        hidden
+        />
+
+        <label for ="addNewText">Käyttäjä id</label>
+        <input type ="number"
+        id ="userIdInput"
+        name = "user_id"
+        placeholder="Your user id:?"
+        />
+
+        <label for ="addNewText">Tapahtuman päivämäärä</label>
+        <input type ="date"
+        id ="entryDateInput"
+        name = "entry_date"
+        placeholder="Tapahtumapäivä ?"
         />
         <button type ="submit" style="margin-top:10px ;">Lisää merkintä</button>
       </form> 
       
       <ul id="text-ul">
 
-
+        
       </ul>
 
       <div class ="stats">
+        Keskiarvot ja tilastot:
         <ul id="stats-ul">
-        Keskiarvot:
-        
         </ul>
-      </div>
-    
 
-        <img id="laatikko1" src="/public/img/sydän.png" alt="Logo" />
-        asdadasd
+      </div>
+  
+        
       
     </main>
 
-  </form>
 
-
-    <body>
+    
   <!-- kortit tässä -->
 <dialog id="myDialog">
   <h2>Otsikko</h2>
@@ -84,13 +145,9 @@
     <button value="ok">OK</button>
   </form>
 </dialog>
-
-  <script type="module" src="/src/js/paivakirja.js"></script>
-</body>
-
-
+    
     <footer>Copyright: Mika Poikonen</footer>
-  </body>
-  <script type="module" src="/src/js/login.js"></script>
+    <script type="module" src="/src/js/login.js"></script>
   <script type="module" src="/src/js/paivakirja.js"></script>
+  </body>
 </html>

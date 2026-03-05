@@ -1,36 +1,144 @@
+button,
+input[type="submit"] {
+  background: #95a7d6;
+  color: rgb(223, 250, 102);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+
+
+
 
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  background-color:  rgb(180, 201, 173);
+  background: linear-gradient(135deg, rgb(180, 201, 173), #95a7d6);
   color: rgb(255, 255, 255);
   font-size: 20px;
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+}
+
+nav ul {
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  display: flex;
+background: #95a7d6;
+color: rgb(223, 250, 102);
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  gap: 10px;
+}
 
 ul a {
-  color: rgb(255, 255, 255);
+ color:rgb(223, 250, 102);
   text-decoration: none;
 }
 
 
-
-
 main {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin-top: 40px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  border: 3px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
+   0 2px 6px rgba(0, 0, 0, 0.08); /*varjostus x-offset,y-offset,blur,spread,color*/
 }
 
-ul {
-  list-style-type: none;
-  background-color:   rgb(180, 201, 173);
-  height: 80px;
-  width: 100%;
-  text-align: center;
-  margin: auto;
-  padding: 0px;
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 380px;
+  justify-content: space-between;
+  row-gap: 10px;
+  
+
+}
+
+form label {
+  display: flex;
+  width: 100px;
+  justify-content:first baseline;
+}
+form input{
+display: flex;
+width: 50%;
+height: 20px;
+}
+
+#notesInput {
+min-width: 100%;
+min-height: 200px;
+}
+
+
+main ul {
+  width: 80%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  align-content: center;
+  justify-content: left;
+  gap: 20px;
   /*box-shadow: 3px 5px gray;*/
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
    0 2px 6px rgba(0, 0, 0, 0.08);
 }
+
+main ul li {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  width: 87%;
+  font-size: 15px;
+background: rgb(223, 250, 102);;
+color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.stats{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.stats ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
 
 #laatikko1 {
   width: 240px;
@@ -44,19 +152,7 @@ ul {
   
 }
 
-li {
-  display: inline-block;
-  padding: 5px;
-  font-size: 30px;
 
-  border-style: double;
-  margin: 15px;
-  text-align: center;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-color: rgb(119, 136, 153);
-  box-shadow: 3px 5px gray;
-}
 
 #image {
   display: block;
@@ -81,7 +177,6 @@ div {
 }
 
 footer {
-  background-color:   rgb(180, 201, 173);
   color: rgb(213, 235, 114);
   text-align: center;
   padding-top: 0px;
@@ -91,30 +186,14 @@ footer {
 
 }
 
-nav::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
 
 section {
   margin-top: 50px;
   text-align: center;
 }
 
-main {
-  background-color: rgba(224, 230, 236, 0.527);
-  padding: 30px;
-  width: 60%;
-  margin-top: 40px;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-radius: 20px;
-  border: 3px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
-   0 2px 6px rgba(0, 0, 0, 0.08); /*varjostus x-offset,y-offset,blur,spread,color*/
-}
+
 
 #lightgreen {
   color: rgb(223, 250, 102);
@@ -229,39 +308,3 @@ nav {
  /*Päiväkirja merkintöjen muotoilut*/
 
 
-  /*flexillä uusi tietokantahaku*/ 
-  #card-area {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    background-color: salmon;
-  }
-  /*flexillä uusi tietokantahaku*/ 
-  #card-area .card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    height: 150px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  #text-ul {
-    width: 100%;
-    margin: auto;
-    height: 60%;
-    box-shadow: none;
-  }
-  
-  #text-ul li {
-  list-style-type: none;
-  text-align: left;
-  padding: 5px;
-  font-size: 12px;
-  height: auto;
-}
