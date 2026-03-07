@@ -9,9 +9,8 @@
   <body>
     <nav>
       <ul>
-        <li><a href="../index.html">Etusivu</a></li>
+        <li><a href="/login.html">Käyttäjät</a></li>
         <li><a href="/BMI/bmi.html">BMI Laskuri</a></li>
-        <li><a href="/rajapinnat/rajapinnat-v2.html">Hedelmä esimerkit</a></li>
         <li> Hei käyttäjä <span class="username"> Nimi tähän</span></li>
 
        
@@ -93,19 +92,21 @@
 
 
 
-        <label for ="addNewText">Merkinnän id</label>
+        <label for ="addNewText" >Merkinnän id</label>
         <input type ="number"
+        disabled
         id ="statIdInput"
         name = "stat_id"
-        placeholder="Merkinnän ID?"
+        placeholder="Auto fill"
         hidden
         />
 
         <label for ="addNewText">Käyttäjä id</label>
         <input type ="number"
+        disabled
         id ="userIdInput"
         name = "user_id"
-        placeholder="Your user id:?"
+        placeholder="Auto fill"
         />
 
         <label for ="addNewText">Tapahtuman päivämäärä</label>
@@ -137,7 +138,7 @@
     
   <!-- kortit tässä -->
 <dialog id="myDialog">
-  <h2>Otsikko</h2>
+  <h2>Päiväkirjamerkinnän muokkaus</h2>
   <p id="dialogId">Tässä on dialogin sisältöä.</p>
 
   <form method="dialog">
