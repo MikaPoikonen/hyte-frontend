@@ -278,15 +278,14 @@ Sovelluksessa on hyödynnetty seuraavia lähteitä:
 
 Projektissa on hyödynnetty tekoälyä ohjelmoinnin tukena. Tekoälyä käytettiin esimerkiksi:
 - virheiden etsimisen tukemiseen ja selittämiseen tarvittaessa miksi esim. koodi meni rikki. yksittäisiä parametrejä tai undefinied / null ongelmia
-- SQL-kyselyiden tarkistamiseen
-- frontend- ja backend-koodin yhteentoimivuutta put ja delete lisäyksissä
 - erilaisten css ulkoasujen vinkkaukseen. Mitä vaihtoehtoja olisi käyttää tai saada esim laatikoille hyvät shadow.
 - README-tiedoston ja dokumentaation pohjaan helpottamaan kokonaisuuden luomisessa. Teki mm. koodit osaan kaavioista ja auttoi selkeyttämään kokonaiskuvaa 
   ja toimintoja.
+- Azure serverin pystyttämisessä. Matin ohjeissa olevaa linux serveriä esim ei ollut enää. Lisäksi tuli ongelmia regionin kanssa että pystyi käyttämään esim halvinta 8 dollarin serveriä joka oli nyt 2 luokan alla.
+- Komentoja linuksiin ja toimintatapaa. Miten yhdistää, liikkua, päivittää frontend nettiin sekä backend. Nano käyttöä ja yleisiä komentoja
+- Tekoäly ei tuottanut valmista projektia kokonaan, vaan sitä käytettiin oppimisen tukena ja yksittäisten ongelmien pienten osien ratkaisemiseen.
 
-Tekoäly ei tuottanut valmista projektia kokonaan, vaan sitä käytettiin oppimisen tukena ja yksittäisten ongelmien pienten osien ratkaisemiseen.
-
-Lisäksi AI:n käyttöä ei ole merkitty erikseen kommentteihin. Koodi on melkein täysin minun tuottamaa esimerkkien kautta tehtynä jota ollaan tuntityöskentelynä tehty.
+Lisäksi AI:n käyttöä merkitty erikseen kommentteihin. Koodi on melkein täysin minun tuottamaa esimerkkien kautta tehtynä jota ollaan tuntityöskentelynä tehty.
 
 Ai:lla luotu bannerikuva juoksija nainen
 

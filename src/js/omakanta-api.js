@@ -93,6 +93,7 @@ export async function postDailyStats(payload) {
   return await res.json();
 }
 
+//Tekoälyltä haettu tieto formatointitapoihin ja itse sovellettu-->
 // Päiväkirjamerkinnän päivittäminen
 export async function putDailyStats(payload) {
   let token = localStorage.getItem("token");
@@ -129,7 +130,8 @@ export async function putDailyStats(payload) {
   return await res.json();
 }
 
-// Päiväkirjamerkinnän päivittäminen
+//Päiväkirjamerkinnän poistaminen 
+//Tekoälyltä haettu tieto formatointitapoihin ja itse sovellettu-->
 export async function deleteDailyStat(payload) {
   let token = localStorage.getItem("token");
   //console.log(token);

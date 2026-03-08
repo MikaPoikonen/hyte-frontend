@@ -13,6 +13,7 @@ document.querySelector(".username").textContent = name ? name : "vieras"; //
 
 //Päivämäärän muokkaus oikeeseen muotoon json varten
 // Päivämäärä ja kerronaika
+// Tekoälyltä haettu tieto formatointitapoihin ja itse sovellettu
 function formatDate(iso) {
   const d = new Date(iso);
   return d.toLocaleString("fi-FI", {
@@ -23,7 +24,7 @@ function formatDate(iso) {
     minute: "2-digit",
   });
 }
-
+// Tekoälyltä haettu tieto formatointitapoihin ja itse sovellettu
 // Formatoidaan päivämäärä ilman kellonaikaa
 function formatDateClock(iso) {
   const d = new Date(iso);
@@ -224,7 +225,7 @@ Alin paino: ${minWeight} kiloa<br>`;
           type="date"
           id="dateInput"
           name="entry_date"
-          value="${row.entry_date?.slice(0, 10) ?? ""}"
+          value="${row.entry_date?.slice(0, 10) ?? ""}" 
           required
         />
       </div>
@@ -233,7 +234,9 @@ Alin paino: ${minWeight} kiloa<br>`;
       <button type="button" id="deleteBtn">Poista merkintä</button>
     </form>
   `;
+      // Tekoälyltä haettu tieto formatointitapoihin ja itse sovellettu slice!!
 
+      
       const putItemForm = dialogIdEl.querySelector(".put-item-form");
 
       // Valitun merkinnän stat_id kautta poistaminen
@@ -315,19 +318,7 @@ diaryForm.addEventListener("submit", async (event) => {
   payload.weight;
   payload.entry_date;
 
-  //payload.weight = startWeight; // ei käytöss
-
-  /** let body = {
-    "user_id":user_id,
-    "calories_eaten":payload.calories_eaten,
-   "calories_used":payload.calories_used,
-   "steps": payload.steps,
-    "weight_today":payload.weight_today,
-    "mood":payload.mood,
-    "sleep_hours":payload.sleep_hours,
-    "weight": 20,
-    "notes":payload.notes,
-    }*/
+ 
   let body = {
     user_id: myUserId,
     calories_eaten: Number(payload.calories_eaten),
