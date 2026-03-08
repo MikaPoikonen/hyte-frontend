@@ -108,40 +108,36 @@ const addItem = async (event) => {
   const nameItem = document.querySelector("#newItemName").value.trim();
   const weightItem = document.querySelector("#newItemWeight").value.trim();
 
-  if (!name){
-    alert ("!NIMI puuttuu");
+  if (!name) {
+    alert("!NIMI puuttuu");
     return;
   }
 
   const url = `http://127.0.0.1:3000/api/items`;
 
-
   // Optioni posti eli add ja pitää lisätä json muodossa. Haetaan muuttujat
   //oikein nyt ja laitetaan json muodossa alla:::
   const options = {
-    method: 'POST',
-	headers: {
-		'Content-Type': 'application/json',
-	},
-	body: JSON.stringify(
-        {
-        name: nameItem,
-        weight: weightItem
-        })
-
-
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      name: nameItem,
+      weight: weightItem,
+    }),
   };
   const item = await fetchData(url, options);
 };
 
 const loadItemToPutForm = async () => {
-  const idInput = document.querySelector('#putItemId');
-  const nameInput = document.querySelector('#putItemName');
+  const idInput = document.querySelector("#putItemId");
+  const nameInput = document.querySelector("#putItemName");
 
   const itemId = idInput.value.trim();
 
   if (!itemId) {
-    alert('Anna Item ID');
+    alert("Anna Item ID");
     return;
   }
 
@@ -157,7 +153,7 @@ const loadItemToPutForm = async () => {
 
   // täytetään nimi kenttään
   // mikäli nimeä ei saada haettua niin käytä tyhjää merkkijonoa
-  nameInput.value = item.name ?? '';
+  nameInput.value = item.name ?? "";
 
   alert(`Haettu item: ${item.name}`);
 };
@@ -168,27 +164,27 @@ const loadItemToPutForm = async () => {
 const updateItemById = async (event) => {
   event.preventDefault();
 
-  const idInput = document.querySelector('#putItemId');
-  const nameInput = document.querySelector('#putItemName');
+  const idInput = document.querySelector("#putItemId");
+  const nameInput = document.querySelector("#putItemName");
 
   const itemId = idInput.value.trim();
   const newName = nameInput.value.trim();
 
   if (!itemId) {
-    alert('Item ID puuttuu');
+    alert("Item ID puuttuu");
     return;
   }
 
   if (!newName) {
-    alert('Uusi nimi puuttuu');
+    alert("Uusi nimi puuttuu");
     return;
   }
 
   const url = `http://localhost:3000/api/items/${itemId}`;
 
   const options = {
-    method: 'PUT',
-    headers: { 'Content-Type': 'application/json' },
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name: newName }),
   };
 
@@ -206,10 +202,15 @@ const updateItemById = async (event) => {
   // valinnainen: päivitä lista uudestaan
   // await getItems();
 
-  idInput.value = '';
-  nameInput.value = '';
+  idInput.value = "";
+  nameInput.value = "";
 };
 
-
-
-export { getItems, getItemById, deleteItemById, addItem, loadItemToPutForm, updateItemById }; // exportataan ulos eri tiedostojen käyttön
+export {
+  getItems,
+  getItemById,
+  deleteItemById,
+  addItem,
+  loadItemToPutForm,
+  updateItemById,
+}; // exportataan ulos eri tiedostojen käyttön

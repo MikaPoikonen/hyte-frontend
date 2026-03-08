@@ -13,48 +13,35 @@ const normalBmi = `Normaaliksi on valittu se painoindeksin alue, jossa ihmisen t
 
 const highBmi = `Kun painoindeksi ylittää 25, ollaan liikapainon puolella. Liikakilojen määrä voi vaihdella erittäin paljon, muutamasta kilosta moniin kymmeniin kiloihin. Siksi on hyödyllistä täsmentää, kuinka suuresta ylipainosta on kyse.`;
 
-
-
 const bmiForm = document.querySelector("form");
-
 
 // Näytä analyysialueen  oletusviesti
 
 // Painoindeksilaskuri
 bmiForm.addEventListener("submit", (evt) => {
-
-
   const weight = Number(weightInput.value);
   const height = Number(heightInput.value);
 
   //console.log("paino:", weightInput.value, "pituus: ", heightInput.value);
   evt.preventDefault();
 
-
   resetBMIStyles();
-  calculateBMI(weight, height); 
+  calculateBMI(weight, height);
 });
 
 // Tyylien nollaus
 const resetBMIStyles = () => {
   analyysi.innerHTML = "";
-  document
-    .querySelector(".bmi0-19")
-    .classList.remove(
-      "lowBmi",
-    ); 
+  document.querySelector(".bmi0-19").classList.remove("lowBmi");
   document.querySelector(".bmi19-25").classList.remove("normalBmi");
   document.querySelector(".bmi25-30").classList.remove("highBmi");
-
-  
 };
 // BMI:n laskenta ja analyysin päivitys
 const calculateBMI = (weight, height) => {
   const bmi = (weight / (height / 100) ** 2).toFixed(1);
   //console.log(bmi);
 
-  mittaustulos.textContent = bmi; 
-
+  mittaustulos.textContent = bmi;
 
   if (bmi < 18.9) {
     //console.log("alipaino");
@@ -70,5 +57,4 @@ const calculateBMI = (weight, height) => {
     analyysi.textContent = highBmi;
     //console.log("ylipaino");
   }
-
 };

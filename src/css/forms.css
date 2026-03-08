@@ -1,25 +1,24 @@
 /*loging sivun forms*/
-*:focus{
-    outline: 20px dotted red;
+*:focus {
+  outline: 20px dotted red;
 }
 .registerForm input {
-    padding: 40px;
+  padding: 40px;
 }
 
-p::first-letter{
-    font-size: 50px;
+p::first-letter {
+  font-size: 50px;
 }
 
 ::placeholder {
-    color: blue;
+  color: blue;
 }
 
-input:focus, textarea:focus {
-    background-color: aquamarine;
+input:focus,
+textarea:focus {
+  background-color: aquamarine;
 }
 
 .registerForm input:user-valid {
-    background-color: chartreuse;
-    
+  background-color: chartreuse;
 }
-

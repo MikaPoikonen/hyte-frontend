@@ -104,7 +104,6 @@ const loginUser = async (event) => {
   loginForm.reset(); // tyhjennetään formi
 };
 
-
 // Tarkistaa omat tiedot. Piiloteettu ei käytössä.
 const checkUser = async (event) => {
   const url = "http://localhost:3000/api/users/me";
@@ -139,7 +138,7 @@ const checkUser = async (event) => {
   console.log(response);
   loginForm.reset(); // tyhjennetään formi
 };
- // Ei käytössä delete user.  Delete user on paivakirja.js sekä omakanta-api.js tiedostoissa
+// Ei käytössä delete user.  Delete user on paivakirja.js sekä omakanta-api.js tiedostoissa
 const deleteUser = async (event) => {
   console.log(evt);
   console.log(evt.target);

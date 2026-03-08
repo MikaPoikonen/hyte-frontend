@@ -115,6 +115,8 @@ Backend käyttää MariaDB-tietokantaa `harjoitus`, jossa taulut ovat:
 Taulu `dailyhealthstats` viittaa `users`-tauluun `user_id`-foreign keyllä.
 
 ### Tiedosto kaavio
+
+```mermaid
 flowchart LR
 
 subgraph Frontend
@@ -146,7 +148,6 @@ subgraph Database
     stats[(dailyhealthstats)]
 end
 
-
 index --> css
 login --> loginJS
 paivakirja --> diaryJS
@@ -167,6 +168,7 @@ userController --> users
 omakantaController --> stats
 
 stats -->|user_id| users
+```
 
 
 
@@ -275,15 +277,16 @@ Sovelluksessa on hyödynnetty seuraavia lähteitä:
 ## AI:n hyödyntäminen
 
 Projektissa on hyödynnetty tekoälyä ohjelmoinnin tukena. Tekoälyä käytettiin esimerkiksi:
-- virheiden etsimisen tukemiseen ja selittämiseen tarvittaessa miksi esim. koodi meni rikki.
+- virheiden etsimisen tukemiseen ja selittämiseen tarvittaessa miksi esim. koodi meni rikki. yksittäisiä parametrejä tai undefinied / null ongelmia
 - SQL-kyselyiden tarkistamiseen
 - frontend- ja backend-koodin yhteentoimivuutta put ja delete lisäyksissä
-- erilaisten css ulkoasujen vinkkaukseen
-- README-tiedoston ja dokumentaation pohjaan
+- erilaisten css ulkoasujen vinkkaukseen. Mitä vaihtoehtoja olisi käyttää tai saada esim laatikoille hyvät shadow.
+- README-tiedoston ja dokumentaation pohjaan helpottamaan kokonaisuuden luomisessa. Teki mm. koodit osaan kaavioista ja auttoi selkeyttämään kokonaiskuvaa 
+  ja toimintoja.
 
-Tekoäly ei tuottanut valmista projektia kokonaan, vaan sitä käytettiin oppimisen tukena ja yksittäisten ongelmien ratkaisemiseen.
+Tekoäly ei tuottanut valmista projektia kokonaan, vaan sitä käytettiin oppimisen tukena ja yksittäisten ongelmien pienten osien ratkaisemiseen.
 
-Lisäksi AI:n käyttö on merkitty tarpeen mukaan myös lähdekoodin kommentteihin.
+Lisäksi AI:n käyttöä ei ole merkitty erikseen kommentteihin. Koodi on melkein täysin minun tuottamaa esimerkkien kautta tehtynä jota ollaan tuntityöskentelynä tehty.
 
 Ai:lla luotu bannerikuva juoksija nainen
 

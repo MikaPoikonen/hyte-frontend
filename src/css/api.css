@@ -9,6 +9,22 @@ body {
   padding: 40px;
 }
 
+/* Otsikko kenttä takaisin*/ 
+#takaisin {
+background: #95a7d6;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+/* Linkki takaisin*/
+#takaisin a {
+text-decoration: none;
+color: rgb(223, 250, 102);
+}
+
 /* Otsikot */
 h3 {
   color: rgb(223, 250, 102); /* kirkas lime */

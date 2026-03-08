@@ -1,7 +1,11 @@
 import "../css/api.css";
-import { getItems, getItemById,deleteItemById,addItem,loadItemToPutForm } from "./items.js";
-
-
+import {
+  getItems,
+  getItemById,
+  deleteItemById,
+  addItem,
+  loadItemToPutForm,
+} from "./items.js";
 
 ("use strict");
 console.log("the script starts");
@@ -73,23 +77,22 @@ async function getData() {
 //getItems();
 
 const getItemsbutton = document.querySelector(".get_items");
-getItemsbutton.addEventListener('click', getItems); //älä laita getitems() ei odota tietoa
+getItemsbutton.addEventListener("click", getItems); //älä laita getitems() ei odota tietoa
 
 const getForm = document.querySelector(".get-item-form");
-getForm.addEventListener('submit', getItemById);
+getForm.addEventListener("submit", getItemById);
 
 //poisto napin hakeminen
 const deleteButton = document.querySelector(".delete-item");
-deleteButton.addEventListener('click',deleteItemById);
-
+deleteButton.addEventListener("click", deleteItemById);
 
 //ADD button hakeminen
 const AddItemForm = document.querySelector(".add-item-form");
-AddItemForm.addEventListener('submit',addItem);
+AddItemForm.addEventListener("submit", addItem);
 
 // PUT lisäykset KOTITEHTÄVÄKSI ne on tässä
-const loadItemBtn = document.querySelector('.load-item');
-loadItemBtn.addEventListener('click', loadItemToPutForm);
+const loadItemBtn = document.querySelector(".load-item");
+loadItemBtn.addEventListener("click", loadItemToPutForm);
 
-const putForm = document.querySelector('.put-item-form');
-putForm.addEventListener('submit', updateItemById);
+const putForm = document.querySelector(".put-item-form");
+putForm.addEventListener("submit", updateItemById);

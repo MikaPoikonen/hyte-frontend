@@ -23,8 +23,8 @@ nav ul {
 
 nav ul li {
   display: flex;
-background: #95a7d6;
-color: rgb(223, 250, 102);
+  background: #95a7d6;
+  color: rgb(223, 250, 102);
   padding: 10px;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
@@ -32,11 +32,9 @@ color: rgb(223, 250, 102);
 }
 
 ul a {
- color:rgb(223, 250, 102);
+  color: rgb(223, 250, 102);
   text-decoration: none;
 }
-
-
 
 main {
   display: flex;
@@ -49,21 +47,23 @@ main {
   margin-bottom: 50px;
   border-radius: 20px;
   border: 3px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
-   0 2px 6px rgba(0, 0, 0, 0.08); /*varjostus x-offset,y-offset,blur,spread,color*/
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25),
+    0 2px 6px rgba(0, 0, 0, 0.08); /*varjostus x-offset,y-offset,blur,spread,color*/
 }
 
 ul {
   list-style-type: none;
-  background-color:   rgb(180, 201, 173);
+  background-color: rgb(180, 201, 173);
   height: 80px;
   width: 100%;
   text-align: center;
   margin: auto;
   padding: 0px;
   /*box-shadow: 3px 5px gray;*/
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
-   0 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25),
+    0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 #laatikko1 {
@@ -75,7 +75,6 @@ ul {
   top: -90px;
   right: -54px;
   border-radius: 100%;
-  
 }
 
 li {
@@ -107,7 +106,6 @@ div {
 
 #red {
   background-color: red;
-  
 }
 
 .clear {
@@ -115,17 +113,14 @@ div {
 }
 
 footer {
-  background-color:   rgb(180, 201, 173);
+  background-color: rgb(180, 201, 173);
   color: rgb(213, 235, 114);
   text-align: center;
   padding-top: 0px;
   width: 100%;
   height: 50px;
-    box-shadow: 0 -2px 10px rgba(0, 30, 0, 0.25)
-
+  box-shadow: 0 -2px 10px rgba(0, 30, 0, 0.25);
 }
-
-
 
 section {
   margin-top: 50px;
@@ -142,8 +137,9 @@ main {
   margin-bottom: 50px;
   border-radius: 20px;
   border: 3px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
-   0 2px 6px rgba(0, 0, 0, 0.08); /*varjostus x-offset,y-offset,blur,spread,color*/
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25),
+    0 2px 6px rgba(0, 0, 0, 0.08); /*varjostus x-offset,y-offset,blur,spread,color*/
 }
 
 #lightgreen {
@@ -161,28 +157,27 @@ nav {
   margin: auto;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
- 
 
-  
-  
   background-image: url(public/img/running.png);
   background-repeat: no-repeat;
-  background-position: center;/*esim keskellä alhaalla.
+  background-position: center; /*esim keskellä alhaalla.
             Voi myös antaa 50% 50% esim. tai pelkkä center*/
   background-size: cover;
-  }
+}
 
-  h1,h2,h3,h4,h5 {
-    color:  rgb(223, 250, 102);
-  }
-
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: rgb(223, 250, 102);
+}
 
 /*Brakepointit*/
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
   #image {
     float: none;
     width: 80%;
-
   }
   main {
     width: 80%;
@@ -196,36 +191,36 @@ nav {
     image-rendering: auto;
   }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  width: 100%;
-  align-content: end;
-  margin: 0%;
-  padding: 0%;
-}
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    align-content: end;
+    margin: 0%;
+    padding: 0%;
+  }
 
-nav ul {
-  gap: 2px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: auto;
-  width: 100%;
-}
-nav ul li {
-  justify-content: center;
-  font-size: 15px;
-  height: auto;
-  text-align: center;
-  margin: 0%;
-}
-
-  h3{ font-size: 50px;
+  nav ul {
+    gap: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+  nav ul li {
+    justify-content: center;
+    font-size: 15px;
+    height: auto;
     text-align: center;
+    margin: 0%;
+  }
 
+  h3 {
+    font-size: 50px;
+    text-align: center;
   }
   footer {
     width: 85%;
@@ -237,9 +232,6 @@ nav ul li {
     padding: 0px;
     margin: 10px;
   }
-  
-  
-  
 }
 @media screen and (min-width: 900px) {
   #ylakuva {
@@ -251,7 +243,4 @@ nav ul li {
     background-position: center;
     background-size: cover;
   }
-
-  
-
 }

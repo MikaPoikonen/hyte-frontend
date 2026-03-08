@@ -46,8 +46,6 @@ let myUserId = "";
 async function renderId() {
   let userdata = await getMyId();
   myUserId = userdata.user_id;
-
-  
 }
 renderId();
 
@@ -84,7 +82,6 @@ async function renderStats() {
       minWeight = data[i].weight_today;
     }
   }
-  
 
   //Lasketaan painon muutos
   let weightLoss = 0;
@@ -260,39 +257,39 @@ Alin paino: ${minWeight} kiloa<br>`;
       });
 
       // Muokatun formin (Päiväkirjamerkinnän päivittäminen) lähettäminen
-putItemForm.addEventListener("submit", async (event) => {
-  event.preventDefault();
+      putItemForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
 
-  const ent1 = new FormData(putItemForm);
-  const payload = Object.fromEntries(ent1.entries());
+        const ent1 = new FormData(putItemForm);
+        const payload = Object.fromEntries(ent1.entries());
 
-  const body = {
-    user_id: myUserId,
-    stat_id: Number(payload.stat_id),
-    calories_eaten: Number(payload.calories_eaten),
-    calories_used: Number(payload.calories_used),
-    steps: Number(payload.steps),
-    weight_today: Number(payload.weight_today),
-    mood: payload.mood,
-    weight: Number(payload.weight),
-    sleep_hours: Number(payload.sleep_hours),
-    notes: payload.notes,
-    entry_date: payload.entry_date,
-  };
-  
-  // Frontin ilmoitus toiminnasta ja alertti ikkunat
-  try {
-    await putDailyStats(body);
-    alert("Päiväkirjamerkintä päivitetty");
-    myDialog.close();
-    await renderStats();
-  } catch (error) {
-    alert("Päivittäminen epäonnistui");
-    console.error(error);
-  }
-});
+        const body = {
+          user_id: myUserId,
+          stat_id: Number(payload.stat_id),
+          calories_eaten: Number(payload.calories_eaten),
+          calories_used: Number(payload.calories_used),
+          steps: Number(payload.steps),
+          weight_today: Number(payload.weight_today),
+          mood: payload.mood,
+          weight: Number(payload.weight),
+          sleep_hours: Number(payload.sleep_hours),
+          notes: payload.notes,
+          entry_date: payload.entry_date,
+        };
 
-myDialog.showModal();
+        // Frontin ilmoitus toiminnasta ja alertti ikkunat
+        try {
+          await putDailyStats(body);
+          alert("Päiväkirjamerkintä päivitetty");
+          myDialog.close();
+          await renderStats();
+        } catch (error) {
+          alert("Päivittäminen epäonnistui");
+          console.error(error);
+        }
+      });
+
+      myDialog.showModal();
     });
 
     li.appendChild(openBtn);
@@ -319,7 +316,6 @@ diaryForm.addEventListener("submit", async (event) => {
   payload.entry_date;
 
   //payload.weight = startWeight; // ei käytöss
-
 
   /** let body = {
     "user_id":user_id,

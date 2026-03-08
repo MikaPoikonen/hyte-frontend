@@ -2,15 +2,15 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
+  base: './',   // TÄRKEÄ LISÄYS
   build: {
     rollupOptions: {
       input: {
-        index: resolve(__dirname, 'index.html'),
-        yhteystiedot: resolve(__dirname, 'yhteystiedot.html'),
-        respontiivisuus: resolve(__dirname, 'respontiivisuus.html'),
-        jstreenaus: resolve(__dirname, 'js-treenaus.html')
-      },
-    },
-  },
-  base: './',
+        main: resolve(__dirname, 'index.html'),
+        login: resolve(__dirname, 'login.html'),
+        bmi: resolve(__dirname, 'BMI/bmi.html'),
+        paivakirja: resolve(__dirname, 'rajapinnat/paivakirja.html')
+      }
+    }
+  }
 })
