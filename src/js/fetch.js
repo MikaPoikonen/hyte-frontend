@@ -1,6 +1,5 @@
 /**
  * Fetches JSON data from APIs
- *Annetaan tätä optioni jos halutaan iskeä dataa serverille eli pitää olla ja tärkeä
  * @param {string} url - api endpoint url
  * @param {Object} options - request options
  *
@@ -21,4 +20,4 @@ const fetchData = async (url, options = {}) => {
   }
 };
 
-export { fetchData }; //muista export niin saa muille tiedostoille käyttöön
+export { fetchData }; //exportti muille tiedostoille

@@ -1,7 +1,7 @@
 import "../css/api.css";
 import { getItems, getItemById,deleteItemById,addItem,loadItemToPutForm } from "./items.js";
 
-console.log("Toimiiko");
+
 
 ("use strict");
 console.log("the script starts");

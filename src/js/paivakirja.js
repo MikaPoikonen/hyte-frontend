@@ -54,9 +54,9 @@ renderId();
 // Hartaan /me tiedot omakanta stats.
 async function renderStats() {
   const data = await getOmakantaStats();
-  console.log(data);
+  //console.log(data);
   //myUserId = data[0].user_id;
-  console.log(myUserId);
+  //console.log(myUserId);
   diaryTextField.innerHTML = "";
   if (!data || data.length === 0) {
     totalStesUl.innerHTML = "<li>Ei vielä merkintöjä.</li>";
@@ -113,7 +113,7 @@ Alin paino: ${minWeight} kiloa<br>`;
     li.innerHTML = `
     Luotu:<strong>${formatDate(row.created_at)}</strong><br><br>
     Päivä: ${formatDateClock(row.entry_date)}<br>
-    Syödyt: ${row.calories_eaten} kcal<br>
+    Syödyt kalorit: ${row.calories_eaten} kcal<br>
     Poltetut kalorit: ${row.calories_used} kcal<br>
     Askeleet: ${row.steps} päivässä<br>
     Paino alussa: ${row.weight} kg<br>
@@ -232,14 +232,14 @@ Alin paino: ${minWeight} kiloa<br>`;
         />
       </div>
 
-      <button type="submit" style="margin-top: 10px">Päivitä (PUT)</button>
+      <button type="submit" style="margin-top: 10px">Päivitä</button>
       <button type="button" id="deleteBtn">Poista merkintä</button>
     </form>
   `;
 
       const putItemForm = dialogIdEl.querySelector(".put-item-form");
 
-      // Valitun merkinnän poistaminen
+      // Valitun merkinnän stat_id kautta poistaminen
       const deleteButton = document.querySelector("#deleteBtn");
       deleteButton.addEventListener("click", async (event) => {
         event.preventDefault();
@@ -249,7 +249,7 @@ Alin paino: ${minWeight} kiloa<br>`;
           return;
         }
 
-        console.log(row.stat_id);
+        //console.log(row.stat_id);
         const body = {
           stat_id: row.stat_id,
         }; //Ilmoitus poistosta, lähetetään tiedot ja sulketaan dialogi
@@ -280,7 +280,7 @@ putItemForm.addEventListener("submit", async (event) => {
     entry_date: payload.entry_date,
   };
   
-  // Frontin ilmoitus toiminnasta
+  // Frontin ilmoitus toiminnasta ja alertti ikkunat
   try {
     await putDailyStats(body);
     alert("Päiväkirjamerkintä päivitetty");
@@ -318,7 +318,8 @@ diaryForm.addEventListener("submit", async (event) => {
   payload.weight;
   payload.entry_date;
 
-  //payload.weight = startWeight;
+  //payload.weight = startWeight; // ei käytöss
+
 
   /** let body = {
     "user_id":user_id,
@@ -344,7 +345,7 @@ diaryForm.addEventListener("submit", async (event) => {
     entry_date: payload.entry_date,
   };
 
-  console.log(body);
+  //console.log(body);
 
   await postDailyStats(body);
   diaryForm.reset();

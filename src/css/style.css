@@ -1,4 +1,4 @@
-
+/* index.html tyylittelyt*/
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -107,7 +107,7 @@ div {
 
 #red {
   background-color: red;
-  /* tällä voi piilottaa visibility: hidden; */
+  
 }
 
 .clear {

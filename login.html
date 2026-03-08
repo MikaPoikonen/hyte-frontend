@@ -9,27 +9,9 @@
 
   <body>
 
+    
     <h3>REGISTER</h3>
-
-
-    <!-- https://www.w3schools.com/css/css_form.asp -->
-   <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_form_padding -->
-
-   <!-- <pre style="overflow: auto">
-    POST http://localhost:3000/api/users
-    content-type: application/json
-
-    {
-      "username": "daisy",
-      "password": "duck",
-      "email": "daisy@example.com"
-    }
-    </pre>*/-->
-
-
-
-
-
+    <!-- Register form -->
     <form class="registerForm">
       <label for="username">Username</label><!-- Label help to read laber Heads and fields. Also if click header activates form fields -->
       <input
@@ -69,20 +51,10 @@
       />
       <textarea name="" id="">awdadasdasd</textarea>
     </form>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis at quos voluptatem natus est corporis sapiente dolorem qui, voluptatibus, aperiam totam ratione accusamus expedita consequuntur! Doloremque laudantium qui ipsa id!</p>
   </div>
 
     <h3>LOGIN</h3>
-    <!-- <pre><code>
-      # Login
-      POST http://localhost:3000/api/users/login
-      content-type: application/json
-
-      {
-        "username": "daisy",
-        "password": "duck"
-      }
-      </code></pre>-->
+    <!-- Login form -->
     <div>
       <form class="loginForm">
         <label for="username">Username</label>
@@ -106,11 +78,7 @@
     </div>
     <hr />
     <div>
-    <!--  <pre><code>
-        # Get user info by token (requires token)
-        GET http://localhost:3000/api/users/me
-        Authorization: Bearer (put-user-token-here)</code></pre>-->
-      <button id="meRequest">Make an "authenticated" request</button>
+      <button hidden id="meRequest">Make an "authenticated" request</button>
       <br />
       <div id="meResponse"></div>
     </div>

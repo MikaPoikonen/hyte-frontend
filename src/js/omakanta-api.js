@@ -1,10 +1,10 @@
 // Omakanta API -kutsut oman id haku
 export async function getMyId() {
-  //const res = await fetch('http://127.0.0.1:3000/api/omakanta/stats');
+  
 
 	let headers = {};
 	let token = localStorage.getItem('token');
-	console.log(token);
+	//console.log(token);
 	if (token) {
 		headers = { Authorization: `Bearer ${localStorage.token}` };
 	}
@@ -20,7 +20,7 @@ export async function getMyId() {
   const contentType = res.headers.get('content-type') || '';
   if (!contentType.includes('application/json')) {
     const text = await res.text();
-    console.log(text)
+    //console.log(text)
     ;
     throw new Error(`API ei palauttanut JSONia. Alku: ${text.slice(0, 80)}`);
   }
@@ -43,7 +43,7 @@ export async function getOmakantaStats() {
 
 	let headers = {};
 	let token = localStorage.getItem('token');
-	console.log(token);
+	//console.log(token);
 	if (token) {
 		headers = { Authorization: `Bearer ${localStorage.token}` };
 	}
@@ -70,7 +70,7 @@ export async function getOmakantaStats() {
 // Päiväkirjamerkinnän lisääminen
 export async function postDailyStats(payload) {
   const token = localStorage.getItem('token');
-  console.log(token);
+  //console.log(token);
 
   if (!token) {
     throw new Error('Token puuttuu');
@@ -109,7 +109,7 @@ export async function postDailyStats(payload) {
 // Päiväkirjamerkinnän päivittäminen
 export async function putDailyStats(payload) {
   let token = localStorage.getItem('token');
-  console.log(token);
+  //console.log(token);
 
   if (!token) {
     throw new Error('Token puuttuu');
@@ -147,7 +147,7 @@ export async function putDailyStats(payload) {
 // Päiväkirjamerkinnän päivittäminen
 export async function deleteDailyStat(payload) {
   let token = localStorage.getItem('token');
-  console.log(token);
+  //console.log(token);
 
   if (!token) {
     throw new Error('Token puuttuu');

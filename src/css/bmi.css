@@ -1,7 +1,7 @@
 /*********************/
 /* BMI osion tyylittely */
 
-body {background-color:  rgb(180, 201, 173)}
+body {background: linear-gradient(135deg, rgb(180, 201, 173), #95a7d6);}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -21,7 +21,6 @@ ul a {
 
 ul {
   list-style-type: none;
-  background-color:   rgb(180, 201, 173);
   height: 80px;
   width: 100%;
   text-align: center;
@@ -34,16 +33,15 @@ ul {
 
 li {
   display: inline-block;
-  padding: 5px;
   font-size: 30px;
-
   border-style: double;
   margin: 15px;
   text-align: center;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-color: rgb(119, 136, 153);
-  box-shadow: 3px 5px gray;
+  background: #95a7d6;
+  color: rgb(223, 250, 102);
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .card p {
