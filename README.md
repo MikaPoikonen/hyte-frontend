@@ -10,6 +10,7 @@ Asennettu Robot Framerowk ja siihen seuraavat kirjastot:
 
 ## Kuva suoritetuista asennuksista
 ![Robot Framework asennukset](./outputs/robotframework-asennukset.jpg)
+
 ![Robot Framework Python Testi](./outputs/runtestpython.jpg.jpg)
 
 
