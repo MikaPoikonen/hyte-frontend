@@ -1,5 +1,18 @@
 # Omakanta / Hyvinvointipäiväkirja
 
+## Robot Framework testaustyökalu
+
+Asennettu Robot Framerowk ja siihen seuraavat kirjastot:
+- Browser
+- Requests
+- Crypto
+- Robotidy
+
+## Kuva suoritetuista asennuksista
+![Robot Framework asennukset](./outputs/robotframework-asennukset.jpg)
+![Robot Framework Python Testi](./outputs/runtestpython.jpg.jpg)
+
+
 ## Sovelluksen ominaisuudet
 
 Sovellus on hyvinvointipäiväkirja, johon käyttäjä voi kirjata omia terveystietojaan ja seurata hyvinvointiaan.
