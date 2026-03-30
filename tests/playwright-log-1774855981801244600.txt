@@ -1,0 +1,47 @@
+{"level":30,"time":"2026-03-30T07:33:03.502Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Listening on 127.0.0.1:57622"}
+{"level":30,"time":"2026-03-30T07:33:03.549Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-30T07:33:03.999Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-30T07:33:04.000Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-30T07:33:04.000Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-30T07:33:04.013Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-30T07:33:04.014Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@a1bc4c6925ba37423866d82c51ee67c3\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=e51f60e9-fa18-4cca-a2ee-ba84e92cd674\"}"}
+{"level":30,"time":"2026-03-30T07:33:04.060Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Setting default timeout for context context=77c4566a-edd6-4e29-b601-eb56e7c2a0f1 to 10000"}
+{"level":30,"time":"2026-03-30T07:33:04.060Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active context: context=77c4566a-edd6-4e29-b601-eb56e7c2a0f1"}
+{"level":30,"time":"2026-03-30T07:33:04.452Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-30T07:33:04.453Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active page"}
+{"level":30,"time":"2026-03-30T07:33:04.718Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-30T07:33:04.751Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-30T07:33:04.752Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with [name=\"my-text\"] in page."}
+{"level":30,"time":"2026-03-30T07:33:07.013Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-30T07:33:07.019Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-30T07:33:07.020Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with [name=\"my-password\"] in page."}
+{"level":30,"time":"2026-03-30T07:33:08.348Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-30T07:33:08.353Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-30T07:33:08.353Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with [name=\"my-textarea\"] in page."}
+{"level":30,"time":"2026-03-30T07:33:12.938Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-30T07:33:12.944Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-03-30T07:33:12.944Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with [name=\"my-select\"] in page."}
+{"level":30,"time":"2026-03-30T07:33:12.999Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Option entries: 4"}
+{"level":30,"time":"2026-03-30T07:33:12.999Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-03-30T07:33:12.999Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-03-30T07:33:13.005Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-30T07:33:13.005Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with [name=\"my-datalist\"] in page."}
+{"level":30,"time":"2026-03-30T07:33:13.183Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-30T07:33:13.191Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-30T07:33:13.192Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with text=\"Valitse tiedosto\" in page."}
+{"level":30,"time":"2026-03-30T07:33:23.194Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Error of node method  click"}
+================= Original suppressed error =================
+locator.click: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('text="Valitse tiedosto"')[22m
+
+    at internalClick (C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:12341:19)
+    at async click (C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:12322:18)
+    at async PlaywrightServer.click (C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:13635:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2026-03-30T07:33:23.204Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-03-30T07:33:23.204Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","Take screenshot with options: ":{"path":"C:\\Users\\mikap\\OneDrive\\Asiakirjat\\Metropolia opiskelu\\Terveysteknologia\\Front-end\\Hyte-projekti\\tests\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-03-30T07:33:25.250Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-03-30T07:47:30.843Z","pid":29552,"hostname":"DESKTOP-4CKQFDQ","msg":"Removed page=43bbf2d3-d472-45dd-bd96-7e9bac5d2ccf from context=77c4566a-edd6-4e29-b601-eb56e7c2a0f1 page stack"}

@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.13.7 on win32)" generated="2026-03-24T11:42:54.653914" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.13.7 on win32)" generated="2026-03-30T11:44:13.452670" rpa="false" schemaversion="5">
 <suite id="s1" name="Browser Demo" source="C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\tests\browser_demo.robot">
 <test id="s1-t1" name="Test Web Form" line="6">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-03-24T11:42:55.153687" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\mikap\\OneDrive\\Asiakirjat\\Metropolia opiskelu\\Terveysteknologia\\Front-end\\Hyte-projekti\\tests\\browser\\traces\\temp\\eb6d92bd-e17e-4666-86b5-9af5b9440ea2"}</msg>
-<msg time="2026-03-24T11:42:55.233116" level="INFO">Starting Browser process C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:56104</msg>
-<msg time="2026-03-24T11:42:57.212843" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\mikap\\OneDrive\\Asiakirjat\\Metropolia opiskelu\\Terveysteknologia\\Front-end\\Hyte-projekti\\tests\\browser\\traces\\temp\\eb6d92bd-e17e-4666-86b5-9af5b9440ea2"}</msg>
+<msg time="2026-03-30T11:44:14.014432" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\mikap\\OneDrive\\Asiakirjat\\Metropolia opiskelu\\Terveysteknologia\\Front-end\\Hyte-projekti\\tests\\browser\\traces\\temp\\8fba4fcd-3e4c-453e-ab10-6375264316bf"}</msg>
+<msg time="2026-03-30T11:44:14.101630" level="INFO">Starting Browser process C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:52265</msg>
+<msg time="2026-03-30T11:44:16.863596" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\mikap\\OneDrive\\Asiakirjat\\Metropolia opiskelu\\Terveysteknologia\\Front-end\\Hyte-projekti\\tests\\browser\\traces\\temp\\8fba4fcd-3e4c-453e-ab10-6375264316bf"}</msg>
 <arg>chromium</arg>
 <arg>headless=No</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-03-24T11:42:55.152394" elapsed="2.060888"/>
+<status status="PASS" start="2026-03-30T11:44:14.011456" elapsed="2.852598"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-03-24T11:42:57.881610" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
-<msg time="2026-03-24T11:42:57.881766" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-03-30T11:44:17.779313" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
+<msg time="2026-03-30T11:44:17.779458" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://www.selenium.dev/selenium/web/web-form.html</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-03-24T11:42:57.215702" elapsed="0.666359"/>
+<status status="PASS" start="2026-03-30T11:44:16.865661" elapsed="0.914227"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2026-03-24T11:42:57.898292" level="INFO">Title: 'Web form'</msg>
+<msg time="2026-03-30T11:44:17.800028" level="INFO">Title: 'Web form'</msg>
 <arg>==</arg>
 <arg>Web form</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2026-03-24T11:42:57.882537" elapsed="0.015932"/>
+<status status="PASS" start="2026-03-30T11:44:17.780634" elapsed="0.019647"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2026-03-24T11:42:57.900562" level="INFO">Types the text 'somebody@example.com' in the given field.</msg>
+<msg time="2026-03-30T11:44:17.802490" level="INFO">Types the text 'somebody@example.com' in the given field.</msg>
 <arg>[name="my-text"]</arg>
 <arg>${Username}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-03-24T11:42:57.898886" elapsed="2.264106"/>
+<status status="PASS" start="2026-03-30T11:44:17.800890" elapsed="2.282194"/>
 </kw>
 <kw name="Type Secret" owner="Browser">
 <arg>[name="my-password"]</arg>
@@ -50,10 +50,10 @@
 <tag>Setter</tag>
 <doc>Types the given secret from ``variable_name`` into the text field
 found by ``selector``.</doc>
-<status status="PASS" start="2026-03-24T11:43:00.164114" elapsed="1.352504"/>
+<status status="PASS" start="2026-03-30T11:44:20.083687" elapsed="1.351083"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2026-03-24T11:43:01.519962" level="INFO">Types the text 'Hello, Robot Framework!
+<msg time="2026-03-30T11:44:21.437269" level="INFO">Types the text 'Hello, Robot Framework!
 How are you today?' in the given field.</msg>
 <arg>[name="my-textarea"]</arg>
 <arg>${Message}</arg>
@@ -61,43 +61,90 @@ How are you today?' in the given field.</msg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-03-24T11:43:01.517852" elapsed="4.620590"/>
+<status status="PASS" start="2026-03-30T11:44:21.435664" elapsed="4.633348"/>
 </kw>
-<kw name="Select Options By [name=&quot;my-select&quot;]">
-<msg time="2026-03-24T11:43:06.140951" level="FAIL">No keyword with name 'Select Options By [name="my-select"]' found. Did you try using keyword 'Browser.Select Options By' and forgot to use enough whitespace between keyword and arguments?</msg>
-<arg>value 1</arg>
-<status status="FAIL" start="2026-03-24T11:43:06.140737" elapsed="0.000307">No keyword with name 'Select Options By [name="my-select"]' found. Did you try using keyword 'Browser.Select Options By' and forgot to use enough whitespace between keyword and arguments?</status>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-03-30T11:44:26.070385" level="INFO">Selects the option(s) Two, delay=0.1 s by attribute SelectAttribute.label from element [name="my-select"].</msg>
+<arg>[name="my-select"]</arg>
+<arg>label</arg>
+<arg>Two</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-30T11:44:26.069535" elapsed="0.063016"/>
 </kw>
-<kw name="Click With Options" owner="Browser">
-<arg>button</arg>
-<arg>delay=2 s</arg>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-03-30T11:44:26.134080" level="INFO">Types the text 'Seattle' in the given field.</msg>
+<arg>[name="my-datalist"]</arg>
+<arg>Seattle</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-30T11:44:26.133133" elapsed="0.359325"/>
+</kw>
+<kw name="Check Checkbox" owner="Browser">
+<arg>id=my-check-2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2026-03-30T11:44:26.493051" elapsed="0.113835"/>
+</kw>
+<kw name="Check Checkbox" owner="Browser">
+<arg>id=my-radio-2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2026-03-30T11:44:26.607736" elapsed="0.072302"/>
+</kw>
+<kw name="Evaluate JavaScript" owner="Browser">
+<msg time="2026-03-30T11:44:26.707550" level="INFO">JavaScript executed successfully.</msg>
+<arg>css=input[name="my-colors"]</arg>
+<arg>(el) =&gt; { el.value = '#ff0000'; el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); }</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Executes given javascript on the selected element(s) or on page.</doc>
+<status status="PASS" start="2026-03-30T11:44:26.680485" elapsed="0.027556"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-03-30T11:44:26.710724" level="INFO">Types the text '30-03-2026' in the given field.</msg>
+<arg>[name="my-date"]</arg>
+<arg>30-03-2026</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-30T11:44:26.708993" elapsed="0.231484"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-30T11:44:26.941817" level="INFO">Fills the text '8' in the given field.</msg>
+<arg>css=input[name="my-range"]</arg>
+<arg>8</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-30T11:44:26.940986" elapsed="0.017340"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-30T11:44:26.959778" level="INFO">Clicks the element 'text=submit'.</msg>
+<arg>text=submit</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-03-24T11:43:06.141460" elapsed="0.000161"/>
+<status status="PASS" start="2026-03-30T11:44:26.958846" elapsed="0.224411"/>
 </kw>
-<kw name="Get Text" owner="Browser">
-<arg>id=message</arg>
-<arg>==</arg>
-<arg>Received!</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-03-24T11:43:06.142212" elapsed="0.000174"/>
-</kw>
-<status status="FAIL" start="2026-03-24T11:42:55.145630" elapsed="10.997637">No keyword with name 'Select Options By [name="my-select"]' found. Did you try using keyword 'Browser.Select Options By' and forgot to use enough whitespace between keyword and arguments?</status>
+<status status="PASS" start="2026-03-30T11:44:14.009126" elapsed="13.174647"/>
 </test>
-<status status="FAIL" start="2026-03-24T11:42:54.656283" elapsed="11.493972"/>
+<status status="PASS" start="2026-03-30T11:44:13.455892" elapsed="13.732943"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Browser Demo" id="s1" pass="0" fail="1" skip="0">Browser Demo</stat>
+<stat name="Browser Demo" id="s1" pass="1" fail="0" skip="0">Browser Demo</stat>
 </suite>
 </statistics>
 <errors>

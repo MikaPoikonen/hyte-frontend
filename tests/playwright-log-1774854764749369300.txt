@@ -1,0 +1,30 @@
+{"level":30,"time":"2026-03-30T07:12:46.518Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Listening on 127.0.0.1:59935"}
+{"level":30,"time":"2026-03-30T07:12:47.022Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-30T07:12:47.512Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-30T07:12:47.513Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-30T07:12:47.513Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-30T07:12:47.528Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-30T07:12:47.529Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@804f232507bc4b3a33e047428eeb2727\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=55a6e92a-54d2-40b3-ae73-807675b6db04\"}"}
+{"level":30,"time":"2026-03-30T07:12:47.580Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Setting default timeout for context context=b7b6a7e7-922d-41f1-befa-d75af501d4ff to 10000"}
+{"level":30,"time":"2026-03-30T07:12:47.581Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active context: context=b7b6a7e7-922d-41f1-befa-d75af501d4ff"}
+{"level":30,"time":"2026-03-30T07:12:47.987Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-30T07:12:47.988Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active page"}
+{"level":30,"time":"2026-03-30T07:12:48.295Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-30T07:12:48.330Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-30T07:12:48.331Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with [name=\"my-text\"] in page."}
+{"level":30,"time":"2026-03-30T07:12:50.613Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-30T07:12:50.618Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-30T07:12:50.618Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with [name=\"my-password\"] in page."}
+{"level":30,"time":"2026-03-30T07:12:51.943Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-30T07:12:51.948Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-30T07:12:51.948Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with [name=\"my-textarea\"] in page."}
+{"level":30,"time":"2026-03-30T07:12:56.558Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-30T07:12:56.564Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-03-30T07:12:56.564Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with [name=\"my-select\"] in page."}
+{"level":30,"time":"2026-03-30T07:12:56.619Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Option entries: 4"}
+{"level":30,"time":"2026-03-30T07:12:56.619Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-03-30T07:12:56.619Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-03-30T07:12:56.626Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-30T07:12:56.626Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with [name=\"my-datalist\"] in page."}
+{"level":30,"time":"2026-03-30T07:12:56.754Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-30T07:13:05.931Z","pid":9196,"hostname":"DESKTOP-4CKQFDQ","msg":"Removed page=e8f8431e-0465-4804-8e47-a5455e39e2a1 from context=b7b6a7e7-922d-41f1-befa-d75af501d4ff page stack"}
