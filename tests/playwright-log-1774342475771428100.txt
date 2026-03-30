@@ -1,0 +1,29 @@
+{"level":30,"time":"2026-03-24T08:54:37.291Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Listening on 127.0.0.1:53885"}
+{"level":30,"time":"2026-03-24T08:54:37.511Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-24T08:54:37.913Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-24T08:54:37.914Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-24T08:54:37.914Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-24T08:54:37.925Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-24T08:54:37.926Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@595abc2c3a3c7ac2bfd5659aa10b7acb\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=6b6aea47-cb1a-44cf-8ebd-569e768bae90\"}"}
+{"level":30,"time":"2026-03-24T08:54:37.962Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Setting default timeout for context context=169f85b2-d77d-4e15-aba2-0d9974879497 to 10000"}
+{"level":30,"time":"2026-03-24T08:54:37.963Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active context: context=169f85b2-d77d-4e15-aba2-0d9974879497"}
+{"level":30,"time":"2026-03-24T08:54:38.211Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-24T08:54:38.212Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active page"}
+{"level":30,"time":"2026-03-24T08:54:38.544Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-24T08:54:38.574Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-24T08:54:38.575Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with [name=\"my-text\"] in page."}
+{"level":30,"time":"2026-03-24T08:54:40.842Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-24T08:54:40.847Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-24T08:54:40.847Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with [name=\"my-password\"] in page."}
+{"level":30,"time":"2026-03-24T08:54:41.460Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Removed page=9cd3cca5-0a4e-4d8c-bf27-bd3bb8a1df5b from context=169f85b2-d77d-4e15-aba2-0d9974879497 page stack"}
+================= Original suppressed error =================
+locator.type: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for locator('[name="my-password"]')[22m
+[2m    - locator resolved to <input type="password" name="my-password" autocomplete="off" class="form-control"/>[22m
+[2m  - elementHandle.type("SuperSecret!")[22m
+
+    at typeText (C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:12284:17)
+    at async PlaywrightServer.typeText (C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:13635:28)
+=============================================================
+{"level":30,"time":"2026-03-24T08:54:41.461Z","pid":26104,"hostname":"DESKTOP-4CKQFDQ","msg":"Error of node method  typeText"}

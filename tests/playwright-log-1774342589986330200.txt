@@ -1,0 +1,33 @@
+{"level":30,"time":"2026-03-24T08:56:31.476Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Listening on 127.0.0.1:60381"}
+{"level":30,"time":"2026-03-24T08:56:31.718Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-24T08:56:32.135Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-24T08:56:32.136Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-24T08:56:32.136Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-24T08:56:32.147Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-24T08:56:32.148Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@33f1b8657899ec5fcb6c0bea0f2978fc\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=9cc56394-fd4e-44e2-a43c-c8c4a91d0507\"}"}
+{"level":30,"time":"2026-03-24T08:56:32.181Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Setting default timeout for context context=7a6dde63-9cc9-433b-93a8-02261109567e to 10000"}
+{"level":30,"time":"2026-03-24T08:56:32.182Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active context: context=7a6dde63-9cc9-433b-93a8-02261109567e"}
+{"level":30,"time":"2026-03-24T08:56:32.504Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-24T08:56:32.504Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active page"}
+{"level":30,"time":"2026-03-24T08:56:32.742Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-24T08:56:32.751Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-24T08:56:32.751Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with form.loginForm in page."}
+{"level":30,"time":"2026-03-24T08:56:32.846Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-24T08:56:32.854Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-24T08:56:32.855Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with [name=\"username\"] in page."}
+{"level":30,"time":"2026-03-24T08:56:32.885Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Error of node method  typeText"}
+================= Original suppressed error =================
+locator.fill: Error: strict mode violation: locator('[name="username"]') resolved to 2 elements:
+    1) <input type="text" required="" id="username" minlength="3" maxlength="20" name="username" placeholder="daisy"/> aka getByRole('textbox', { name: 'Username Username' })
+    2) <input type="text" name="username" placeholder="Username"/> aka getByRole('textbox', { name: 'Username', exact: true })
+
+Call log:
+[2m  - waiting for locator('[name="username"]')[22m
+
+    at typeText (C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:12282:19)
+    at async PlaywrightServer.typeText (C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:13635:28)
+=============================================================
+{"level":30,"time":"2026-03-24T08:56:32.894Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-03-24T08:56:32.894Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","Take screenshot with options: ":{"path":"C:\\Users\\mikap\\OneDrive\\Asiakirjat\\Metropolia opiskelu\\Terveysteknologia\\Front-end\\Hyte-projekti\\tests\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-03-24T08:56:33.727Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-03-24T09:12:37.011Z","pid":24192,"hostname":"DESKTOP-4CKQFDQ","msg":"Removed page=e95f73fa-f334-4d96-ae31-26dddeb4e643 from context=7a6dde63-9cc9-433b-93a8-02261109567e page stack"}

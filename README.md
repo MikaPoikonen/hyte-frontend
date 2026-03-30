@@ -17,6 +17,11 @@ Asennettu Robot Framerowk ja siihen seuraavat kirjastot:
 ![Robot Framework Python Testi](./outputs/runtestpython.jpg)
 
 
+## Tehtävä kaksi testaukset
+![Form testaus](./outputs/Form%20testaus.png)
+
+![Oman Projektin Testaus](./outputs/omasivu_testaus.png)
+
 ## Sovelluksen ominaisuudet
 
 Sovellus on hyvinvointipäiväkirja, johon käyttäjä voi kirjata omia terveystietojaan ja seurata hyvinvointiaan.

@@ -1,0 +1,16 @@
+{"level":30,"time":"2026-03-24T08:44:39.958Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"Listening on 127.0.0.1:63024"}
+{"level":30,"time":"2026-03-24T08:44:40.033Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-24T08:44:40.415Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-24T08:44:40.416Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-24T08:44:40.416Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-24T08:44:40.425Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-24T08:44:40.426Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@4e58e6474987e7fecb02e380fae864f1\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=10bb2466-a201-496b-8dbe-37fc4e4cadf1\"}"}
+{"level":30,"time":"2026-03-24T08:44:40.462Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"Setting default timeout for context context=8832057c-03fb-4aea-b1a1-9c2e545b5c5f to 10000"}
+{"level":30,"time":"2026-03-24T08:44:40.462Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active context: context=8832057c-03fb-4aea-b1a1-9c2e545b5c5f"}
+{"level":30,"time":"2026-03-24T08:44:40.709Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-24T08:44:40.709Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active page"}
+{"level":30,"time":"2026-03-24T08:44:40.954Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-24T08:44:42.028Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-03-24T08:44:42.028Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","Take screenshot with options: ":{"path":"C:\\Users\\mikap\\OneDrive\\Asiakirjat\\Metropolia opiskelu\\Terveysteknologia\\Front-end\\Hyte-projekti\\tests\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-03-24T08:44:42.381Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-03-24T08:45:24.396Z","pid":25816,"hostname":"DESKTOP-4CKQFDQ","msg":"Removed page=34754b6a-fd7d-41cd-8704-ddb4885c6364 from context=8832057c-03fb-4aea-b1a1-9c2e545b5c5f page stack"}
