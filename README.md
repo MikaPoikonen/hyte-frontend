@@ -29,9 +29,9 @@ Asennettu Robot Framerowk ja siihen seuraavat kirjastot:
 ### Tehtävät 4, 5 ja 6 ###
 ![Oman sivun testaus salattu,haettu env ja paivakirjamerkinnan lisays](./outputs/tehtavat4-5-6.png)
 
-[Omansivun testaus.robot tiedostoon](https://github.com/MikaPoikonen/hyte-frontend/blob/RobotFramework-tehtavat-2-ja-3/tests/omasivu.robot)
+[Omansivun testaus.robot tiedostoon](https://github.com/MikaPoikonen/hyte-frontend/blob/RobotFramework-tehtavat-4-5-6/tests/omasivu.robot)
 
-[HTML Testaus raporttiin](https://github.com/MikaPoikonen/hyte-frontend/blob/RobotFramework-tehtavat-2-ja-3/tests/report.html)
+[HTML Testaus raporttiin](https://github.com/MikaPoikonen/hyte-frontend/blob/RobotFramework-tehtavat-4-5-6/tests/report.html)
 
 ## Sovelluksen ominaisuudet
 
