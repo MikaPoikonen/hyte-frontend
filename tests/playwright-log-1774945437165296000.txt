@@ -1,0 +1,55 @@
+{"level":30,"time":"2026-03-31T08:23:59.215Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Listening on 127.0.0.1:50346"}
+{"level":30,"time":"2026-03-31T08:23:59.297Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-31T08:23:59.749Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-31T08:23:59.751Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-31T08:23:59.751Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-31T08:23:59.766Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-31T08:23:59.767Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@dd165097baeec641466a77e0a019d328\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=efb6facb-4603-49db-978a-fe0e5347426c\"}"}
+{"level":30,"time":"2026-03-31T08:23:59.800Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Setting default timeout for context context=3dcbf3f1-cf07-4950-a6a1-8f53b5f70085 to 10000"}
+{"level":30,"time":"2026-03-31T08:23:59.800Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active context: context=3dcbf3f1-cf07-4950-a6a1-8f53b5f70085"}
+{"level":30,"time":"2026-03-31T08:24:00.129Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-31T08:24:00.130Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active page"}
+{"level":30,"time":"2026-03-31T08:24:00.423Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-31T08:24:00.432Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T08:24:00.433Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with form.loginForm in page."}
+{"level":30,"time":"2026-03-31T08:24:00.498Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T08:24:00.506Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-31T08:24:00.506Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with form.loginForm [name=\"username\"] in page."}
+{"level":30,"time":"2026-03-31T08:24:00.581Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-31T08:24:00.590Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-31T08:24:00.590Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with form.loginForm [name=\"password\"] in page."}
+{"level":30,"time":"2026-03-31T08:24:00.680Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-31T08:24:00.688Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T08:24:00.689Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with form.loginForm input[type=\"submit\"] in page."}
+{"level":30,"time":"2026-03-31T08:24:00.918Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T08:24:04.131Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-31T08:24:04.131Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with id=caloriesEatenInput in page."}
+{"level":30,"time":"2026-03-31T08:24:08.294Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-31T08:24:08.299Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-31T08:24:08.299Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with id=caloriesUsedInput in page."}
+{"level":30,"time":"2026-03-31T08:24:12.364Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-31T08:24:12.370Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-31T08:24:12.370Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with id=stepsInput in page."}
+{"level":30,"time":"2026-03-31T08:24:17.464Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-31T08:24:17.470Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-31T08:24:17.470Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with id=weightTodayInput in page."}
+{"level":30,"time":"2026-03-31T08:24:19.529Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-31T08:24:19.536Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-31T08:24:19.536Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with id=moodInput in page."}
+{"level":30,"time":"2026-03-31T08:24:29.557Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Error of node method  typeText"}
+================= Original suppressed error =================
+locator.type: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('id=moodInput')[22m
+[2m    - locator resolved to <input type="text" name="mood" id="moodInput" placeholder="Mikä Fiilis?"/>[22m
+[2m  - elementHandle.type("Testailu fiilis")[22m
+
+    at typeText (C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:12284:17)
+    at async PlaywrightServer.typeText (C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:13635:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2026-03-31T08:24:29.565Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-03-31T08:24:29.566Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","Take screenshot with options: ":{"path":"C:\\Users\\mikap\\OneDrive\\Asiakirjat\\Metropolia opiskelu\\Terveysteknologia\\Front-end\\Hyte-projekti\\tests\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-03-31T08:24:29.956Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-03-31T08:26:49.218Z","pid":19908,"hostname":"DESKTOP-4CKQFDQ","msg":"Removed page=5f237bfa-f4b2-4b51-8641-490d5fe21db6 from context=3dcbf3f1-cf07-4950-a6a1-8f53b5f70085 page stack"}

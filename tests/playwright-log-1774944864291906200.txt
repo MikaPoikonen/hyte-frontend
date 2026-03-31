@@ -1,0 +1,28 @@
+{"level":30,"time":"2026-03-31T08:14:26.455Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Listening on 127.0.0.1:51278"}
+{"level":30,"time":"2026-03-31T08:14:26.944Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-31T08:14:27.375Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-31T08:14:27.376Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-31T08:14:27.377Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-31T08:14:27.414Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-31T08:14:27.415Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@723fac600ed2c0bad09a8853429dc7ec\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=e654ec1e-6f99-47f8-b798-fcc96466f78a\"}"}
+{"level":30,"time":"2026-03-31T08:14:27.447Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Setting default timeout for context context=930bdab3-26f9-4354-9ff3-476c2eb61920 to 10000"}
+{"level":30,"time":"2026-03-31T08:14:27.447Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active context: context=930bdab3-26f9-4354-9ff3-476c2eb61920"}
+{"level":30,"time":"2026-03-31T08:14:27.760Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-31T08:14:27.761Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active page"}
+{"level":30,"time":"2026-03-31T08:14:27.997Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-31T08:14:28.008Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T08:14:28.008Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with form.loginForm in page."}
+{"level":30,"time":"2026-03-31T08:14:28.107Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T08:14:28.115Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-31T08:14:28.115Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with form.loginForm [name=\"username\"] in page."}
+{"level":30,"time":"2026-03-31T08:14:28.192Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-31T08:14:28.197Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-31T08:14:28.198Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with form.loginForm [name=\"password\"] in page."}
+{"level":30,"time":"2026-03-31T08:14:28.265Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-31T08:14:28.271Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T08:14:28.271Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with form.loginForm input[type=\"submit\"] in page."}
+{"level":30,"time":"2026-03-31T08:14:28.476Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T08:14:31.643Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-31T08:14:31.643Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with id=caloriesEatenInput in page."}
+{"level":30,"time":"2026-03-31T08:14:31.746Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-31T08:26:55.146Z","pid":31544,"hostname":"DESKTOP-4CKQFDQ","msg":"Removed page=c3e943a2-d9c1-4bcb-81ea-4214848b4a90 from context=930bdab3-26f9-4354-9ff3-476c2eb61920 page stack"}
