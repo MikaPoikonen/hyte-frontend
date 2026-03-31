@@ -25,6 +25,14 @@ Asennettu Robot Framerowk ja siihen seuraavat kirjastot:
 ### Tehtävä kolme
 ![Formin muut testaukset](./outputs/testform.png)
 
+
+### Tehtävät 4, 5 ja 6 ###
+![Oman sivun testaus salattu,haettu env ja paivakirjamerkinnan lisays](./outputs/tehtavat4-5-6.png)
+
+[Omasivu linkki]([Tästä](https://github.com/MikaPoikonen/hyte-frontend/blob/RobotFramework-tehtavat-2-ja-3/tests/omasivu.robot))
+
+[HTML Testit]([Tästä](https://github.com/MikaPoikonen/hyte-frontend/blob/RobotFramework-tehtavat-2-ja-3/tests/report.html))
+
 ## Sovelluksen ominaisuudet
 
 Sovellus on hyvinvointipäiväkirja, johon käyttäjä voi kirjata omia terveystietojaan ja seurata hyvinvointiaan.

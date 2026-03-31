@@ -17,5 +17,8 @@ Test Web Form
     Evaluate JavaScript    css=input[name="my-colors"]    (el) => { el.value = '#ff0000'; el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); }
     Type Text  [name="my-date"]  30-03-2026
     Fill Text    css=input[name="my-range"]    8
+     ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys
+    ${prefs}=      Create Dictionary    download.default_directory=${DOWNLOAD DIR}    download.prompt_for_download=${False}
+    Call Method    ${options}    add_experimental_option    prefs    ${prefs}
     Click  text=submit
     

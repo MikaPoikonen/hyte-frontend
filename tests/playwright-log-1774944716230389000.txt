@@ -1,0 +1,41 @@
+{"level":30,"time":"2026-03-31T08:11:58.290Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Listening on 127.0.0.1:52823"}
+{"level":30,"time":"2026-03-31T08:11:58.365Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-31T08:11:58.769Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-31T08:11:58.770Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-31T08:11:58.770Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-31T08:11:58.784Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-31T08:11:58.785Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@51fd6dbcf62810a31c394e4b607fc92f\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=24c32e86-c227-40fb-a383-d43c7c3fb645\"}"}
+{"level":30,"time":"2026-03-31T08:11:58.825Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Setting default timeout for context context=6730c1ff-2558-416d-9b8f-af72afb63d07 to 10000"}
+{"level":30,"time":"2026-03-31T08:11:58.826Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active context: context=6730c1ff-2558-416d-9b8f-af72afb63d07"}
+{"level":30,"time":"2026-03-31T08:11:59.121Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-31T08:11:59.122Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Changed active page"}
+{"level":30,"time":"2026-03-31T08:11:59.357Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-31T08:11:59.367Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T08:11:59.367Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with form.loginForm in page."}
+{"level":30,"time":"2026-03-31T08:11:59.463Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T08:11:59.472Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-31T08:11:59.472Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with form.loginForm [name=\"username\"] in page."}
+{"level":30,"time":"2026-03-31T08:11:59.548Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-31T08:11:59.554Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-31T08:11:59.554Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with form.loginForm [name=\"password\"] in page."}
+{"level":30,"time":"2026-03-31T08:11:59.623Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-31T08:11:59.632Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T08:11:59.632Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with form.loginForm input[type=\"submit\"] in page."}
+{"level":30,"time":"2026-03-31T08:11:59.848Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T08:12:03.017Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-31T08:12:03.017Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Strict mode is enabled, find Locator with form.add-text-site [name=\"calories_eaten] in page."}
+{"level":30,"time":"2026-03-31T08:12:03.021Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Error of node method  typeText"}
+================= Original suppressed error =================
+locator.fill: Unexpected token "" while parsing css selector "form.add-text-site [name="calories_eaten]". Did you mean to CSS.escape it?
+Call log:
+[2m  - waiting for form.add-text-site [name="calories_eaten][22m
+
+    at typeText (C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:12282:19)
+    at async PlaywrightServer.typeText (C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:13635:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2026-03-31T08:12:03.033Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-03-31T08:12:03.034Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","Take screenshot with options: ":{"path":"C:\\Users\\mikap\\OneDrive\\Asiakirjat\\Metropolia opiskelu\\Terveysteknologia\\Front-end\\Hyte-projekti\\tests\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-03-31T08:12:03.887Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-03-31T08:26:57.778Z","pid":22976,"hostname":"DESKTOP-4CKQFDQ","msg":"Removed page=e695d76b-5ae7-4fec-8e49-0a8844cd8d1a from context=6730c1ff-2558-416d-9b8f-af72afb63d07 page stack"}
