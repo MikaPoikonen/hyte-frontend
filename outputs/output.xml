@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.7 on win32)" generated="2026-04-13T09:16:12.899757" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\tests">
+<suite id="s1-s1" name="Browser Demo" source="C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\tests\browser_demo.robot">
+<test id="s1-s1-t1" name="Test Web Form" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-13T09:16:14.003280" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\mikap\\OneDrive\\Asiakirjat\\Metropolia opiskelu\\Terveysteknologia\\Front-end\\Hyte-projekti\\outputs\\browser\\traces\\temp\\deae0434-dec7-4e95-8c5b-531eee4cef7b"}</msg>
+<msg time="2026-04-13T09:16:14.065581" level="INFO">Starting Browser process C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:59617</msg>
+<msg time="2026-04-13T09:16:36.297178" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\mikap\\OneDrive\\Asiakirjat\\Metropolia opiskelu\\Terveysteknologia\\Front-end\\Hyte-projekti\\outputs\\browser\\traces\\temp\\deae0434-dec7-4e95-8c5b-531eee4cef7b"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-13T09:16:14.001519" elapsed="22.296508"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-13T09:16:37.058911" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
+<msg time="2026-04-13T09:16:37.059065" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://www.selenium.dev/selenium/web/web-form.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-13T09:16:36.302557" elapsed="0.757378"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-04-13T09:16:37.086951" level="INFO">Title: 'Web form'</msg>
+<arg>==</arg>
+<arg>Web form</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-04-13T09:16:37.060577" elapsed="0.026644"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-13T09:16:37.091462" level="INFO">Types the text 'somebody@example.com' in the given field.</msg>
+<arg>[name="my-text"]</arg>
+<arg>${Username}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:37.089809" elapsed="2.310331"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>[name="my-password"]</arg>
+<arg>$Password</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:39.400618" elapsed="1.353171"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-13T09:16:40.755883" level="INFO">Types the text 'Hello, Robot Framework!
+How are you today?' in the given field.</msg>
+<arg>[name="my-textarea"]</arg>
+<arg>${Message}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:40.754463" elapsed="4.754250"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-04-13T09:16:45.511906" level="INFO">Selects the option(s) Two, delay=0.1 s by attribute SelectAttribute.label from element [name="my-select"].</msg>
+<arg>[name="my-select"]</arg>
+<arg>label</arg>
+<arg>Two</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:45.509870" elapsed="0.073693"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-13T09:16:45.584820" level="INFO">Types the text 'Seattle' in the given field.</msg>
+<arg>[name="my-datalist"]</arg>
+<arg>Seattle</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:45.584054" elapsed="0.111656"/>
+</kw>
+<kw name="Check Checkbox" owner="Browser">
+<arg>id=my-check-2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:45.696237" elapsed="0.090437"/>
+</kw>
+<kw name="Check Checkbox" owner="Browser">
+<arg>id=my-radio-2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:45.787448" elapsed="0.062789"/>
+</kw>
+<kw name="Evaluate JavaScript" owner="Browser">
+<msg time="2026-04-13T09:16:45.870071" level="INFO">JavaScript executed successfully.</msg>
+<arg>css=input[name="my-colors"]</arg>
+<arg>(el) =&gt; { el.value = '#ff0000'; el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); }</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Executes given javascript on the selected element(s) or on page.</doc>
+<status status="PASS" start="2026-04-13T09:16:45.850896" elapsed="0.019482"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-13T09:16:45.871715" level="INFO">Types the text '30-03-2026' in the given field.</msg>
+<arg>[name="my-date"]</arg>
+<arg>30-03-2026</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:45.870889" elapsed="0.140242"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-13T09:16:46.012354" level="INFO">Fills the text '8' in the given field.</msg>
+<arg>css=input[name="my-range"]</arg>
+<arg>8</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:46.011571" elapsed="0.015940"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-04-13T09:16:46.029266" level="FAIL">Evaluating expression "sys.modules['selenium.webdriver'].ChromeOptions()" failed: KeyError: 'selenium.webdriver'</msg>
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2026-04-13T09:16:46.027926" elapsed="0.001687">Evaluating expression "sys.modules['selenium.webdriver'].ChromeOptions()" failed: KeyError: 'selenium.webdriver'</status>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<var>${prefs}</var>
+<arg>download.default_directory=${DOWNLOAD DIR}</arg>
+<arg>download.prompt_for_download=${False}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="NOT RUN" start="2026-04-13T09:16:46.030207" elapsed="0.000242"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" start="2026-04-13T09:16:46.030888" elapsed="0.000191"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>text=submit</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-13T09:16:46.031715" elapsed="0.000159"/>
+</kw>
+<status status="FAIL" start="2026-04-13T09:16:13.998959" elapsed="32.033791">Evaluating expression "sys.modules['selenium.webdriver'].ChromeOptions()" failed: KeyError: 'selenium.webdriver'</status>
+</test>
+<status status="FAIL" start="2026-04-13T09:16:13.017838" elapsed="33.020957"/>
+</suite>
+<suite id="s1-s2" name="Omasivu" source="C:\Users\mikap\OneDrive\Asiakirjat\Metropolia opiskelu\Terveysteknologia\Front-end\Hyte-projekti\tests\omasivu.robot">
+<test id="s1-s2-t1" name="Test Web Form" line="10">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-13T09:16:46.848925" level="INFO">Switching browser to browser=9dc4855c-6045-45b2-ae23-a814f45a6aa4</msg>
+<msg time="2026-04-13T09:16:46.853103" level="INFO">Successfully changed active browser: browser=9dc4855c-6045-45b2-ae23-a814f45a6aa4</msg>
+<msg time="2026-04-13T09:16:46.853290" level="INFO">Reusing existing browser with id: browser=9dc4855c-6045-45b2-ae23-a814f45a6aa4</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-13T09:16:46.847868" elapsed="0.005536"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-13T09:16:47.172645" level="INFO">Successfully initialized new page object and opened url: https://mikapoihyte.norwayeast.cloudapp.azure.com/login.html</msg>
+<arg>https://mikapoihyte.norwayeast.cloudapp.azure.com/login.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-13T09:16:46.853881" elapsed="0.319058"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-04-13T09:16:47.258943" level="INFO">Waited for Element with selector form.loginForm at state visible</msg>
+<arg>form.loginForm</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-04-13T09:16:47.173521" elapsed="0.085665"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-13T09:16:47.260603" level="INFO">Types the text 'kissa' in the given field.</msg>
+<arg>form.loginForm [name="username"]</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:47.259658" elapsed="0.076824"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>form.loginForm [name="password"]</arg>
+<arg>$PASSWORD</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:47.337182" elapsed="0.065361"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-13T09:16:47.403984" level="INFO">Clicks the element 'form.loginForm input[type="submit"]'.</msg>
+<arg>form.loginForm input[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:47.403072" elapsed="0.091018"/>
+</kw>
+<kw name="Wait For Condition" owner="Browser">
+<kw name="Get Url" owner="Browser">
+<arg>==</arg>
+<arg>https://mikapoihyte.norwayeast.cloudapp.azure.com/rajapinnat/paivakirja.html</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2026-04-13T09:16:47.496209" elapsed="3.303851"/>
+</kw>
+<arg>url</arg>
+<arg>==</arg>
+<arg>https://mikapoihyte.norwayeast.cloudapp.azure.com/rajapinnat/paivakirja.html</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for a condition, defined with Browser getter keywords to become True.</doc>
+<status status="PASS" start="2026-04-13T09:16:47.494751" elapsed="3.305517"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-13T09:16:50.801788" level="INFO">Types the text '2800' in the given field.</msg>
+<arg>id=caloriesEatenInput</arg>
+<arg>2800</arg>
+<arg>delay=0.05s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:50.800732" elapsed="0.313131"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-13T09:16:51.115239" level="INFO">Types the text '2250' in the given field.</msg>
+<arg>id=caloriesUsedInput</arg>
+<arg>2250</arg>
+<arg>delay=0.05s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:51.114377" elapsed="0.280331"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-13T09:16:51.399348" level="INFO">Types the text '11205' in the given field.</msg>
+<arg>id=stepsInput</arg>
+<arg>11205</arg>
+<arg>delay=0.05s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:51.396419" elapsed="0.339560"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-13T09:16:51.737817" level="INFO">Types the text '95' in the given field.</msg>
+<arg>id=weightTodayInput</arg>
+<arg>95</arg>
+<arg>delay=0.05s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:51.736773" elapsed="0.171966"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-13T09:16:51.910799" level="INFO">Types the text 'Testailu fiilis' in the given field.</msg>
+<arg>id=moodInput</arg>
+<arg>Testailu fiilis</arg>
+<arg>delay=0.05s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:51.909451" elapsed="0.966144"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-13T09:16:52.878490" level="INFO">Types the text '103' in the given field.</msg>
+<arg>id=weightInput</arg>
+<arg>103</arg>
+<arg>delay=0.05s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:52.876582" elapsed="0.246017"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-13T09:16:53.123947" level="INFO">Types the text '5' in the given field.</msg>
+<arg>id=sleepHoursInput</arg>
+<arg>5</arg>
+<arg>delay=0.05s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:53.123090" elapsed="0.091587"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-13T09:16:53.216295" level="INFO">Types the text 'Koulussa tehnyt kouluhommia ja testaillut toimintaa' in the given field.</msg>
+<arg>id=notesInput</arg>
+<arg>Koulussa tehnyt kouluhommia ja testaillut toimintaa</arg>
+<arg>delay=0.05s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:53.215265" elapsed="3.213326"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-13T09:16:56.430628" level="INFO">Types the text '31-03-2026' in the given field.</msg>
+<arg>id=entryDateInput</arg>
+<arg>31-03-2026</arg>
+<arg>delay=0.05s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:56.429272" elapsed="0.663095"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-13T09:16:57.093966" level="INFO">Clicks the element 'text=Lisää merkintä'.</msg>
+<arg>text=Lisää merkintä</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-13T09:16:57.092971" elapsed="0.040148"/>
+</kw>
+<status status="PASS" start="2026-04-13T09:16:46.842421" elapsed="10.291637"/>
+</test>
+<status status="PASS" start="2026-04-13T09:16:46.043235" elapsed="11.098689"/>
+</suite>
+<status status="FAIL" start="2026-04-13T09:16:12.903182" elapsed="44.245654"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="1" skip="0">Tests</stat>
+<stat name="Browser Demo" id="s1-s1" pass="0" fail="1" skip="0">Tests.Browser Demo</stat>
+<stat name="Omasivu" id="s1-s2" pass="1" fail="0" skip="0">Tests.Omasivu</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

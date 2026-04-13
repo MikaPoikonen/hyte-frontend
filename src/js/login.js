@@ -53,6 +53,14 @@ const registerUser = async (event) => {
   registerForm.reset(); // tyhjennetään formi
 };
 
+
+
+
+
+
+
+
+
 const loginUser = async (event) => {
   event.preventDefault();
 
